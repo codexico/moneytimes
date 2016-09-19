@@ -1,0 +1,7 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      css/base.css: {}
+      css/styles.css: {}
+      css/header.css: {}
