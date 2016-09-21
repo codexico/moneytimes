@@ -26,10 +26,19 @@
 }
 
 .node__content {
+  display: flex;
+
   margin: 0 0 1rem 1rem;
 }
 .field--name-field-resumo {
   display: none;
+
+  padding-left: 1.2rem;
+
+  flex: 1;
+}
+.field--name-field-resumo p:first-child {
+  margin-top: 0;
 }
 .node--view-mode-teaser .field--type-image img {
   width: 100px;
@@ -49,4 +58,13 @@
   color: #444;
 
   font-size: 0.75rem;
+}
+
+@media (min-width: 500px) {
+  .node__content {
+    margin-left: 0;
+  }
+  .field--name-field-resumo {
+    display: initial;
+  }
 }
