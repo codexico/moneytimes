@@ -64,6 +64,9 @@
   .node__content {
     margin-left: 0;
   }
+  .node__title {
+    flex: 1 1 100%;
+  }
   .field--name-field-resumo {
     display: initial;
   }
