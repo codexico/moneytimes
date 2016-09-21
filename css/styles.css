@@ -50,8 +50,16 @@
   height: auto;
 }
 
+.node__submitted {
+  font-size: 0.8rem;
+  color: #444;
+}
+
 .node--teaser__teaser-details {
   flex: 1 1 100%;
+}
+.teaser-details__author {
+  display: none;
 }
 .teaser-details__date {
   color: #444;
