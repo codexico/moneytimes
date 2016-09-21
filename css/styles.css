@@ -30,6 +30,10 @@
 
   margin: 0 0 1rem 1rem;
 }
+.field--type-text-long img,
+.field--type-text-with-summary img {
+  max-width: 100%;
+}
 .field--name-field-resumo {
   display: none;
 
