@@ -54,6 +54,9 @@
   font-size: 0.8rem;
   color: #444;
 }
+.node__submitted .field--type-created {
+  color: #888;
+}
 
 .node--teaser__teaser-details {
   flex: 1 1 100%;
