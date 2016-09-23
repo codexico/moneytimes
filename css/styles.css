@@ -94,10 +94,12 @@
    ========================================================================== */
 .field--name-field-tags {
   display: flex;
+  flex-wrap: wrap;
 }
 .field--name-field-tags .field__item {
   display: flex;
   margin-left: 1rem;
+  margin-bottom: 0.2rem;
 }
 .field--name-field-tags .field__item:first-child {
   margin-left: 0;
