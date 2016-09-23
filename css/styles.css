@@ -1,3 +1,6 @@
+/* ==========================================================================
+   teaser
+   ========================================================================== */
 .node--view-mode-teaser {
   display: flex;
 
@@ -11,29 +14,8 @@
 .node--view-mode-teaser.node--sticky {
   background-color: #eee;
 }
-
-.node__title {
-  margin: 0 0 1rem 0;
-
-  font-size: 1.3rem;
-
-  flex:1;
-}
-.node__title-link {
-  text-decoration: none;
-
-  color: #222;
-}
-
-.node__content {
-  display: flex;
-
-  margin: 0 0 1rem 1rem;
-}
-.field--type-text-long img,
-.field--type-text-with-summary img {
-  max-width: 100%;
-}
+/* teaser content
+   ========================================================================== */
 .field--name-field-resumo {
   display: none;
 
@@ -49,7 +31,42 @@
   max-width: 100%;
   height: auto;
 }
+/* teaser details
+   ========================================================================== */
+.node--teaser__teaser-details {
+  flex: 1 1 100%;
+}
+.teaser-details__author {
+  display: none;
+  color: #444;
 
+  font-size: 0.75rem;
+}
+.teaser-details__date {
+  color: #444;
+
+  font-size: 0.8rem;
+}
+
+/* ==========================================================================
+   node
+   ========================================================================== */
+/* node title
+   ========================================================================== */
+.node__title {
+  margin: 0 0 1rem 0;
+
+  font-size: 1.3rem;
+
+  flex:1;
+}
+.node__title-link {
+  text-decoration: none;
+
+  color: #222;
+}
+/* node meta
+   ========================================================================== */
 .node__submitted {
   font-size: 0.8rem;
   color: #444;
@@ -57,24 +74,25 @@
 .node__submitted .field--type-created {
   color: #888;
 }
-
-.node--teaser__teaser-details {
-  flex: 1 1 100%;
+/* node content
+   ========================================================================== */
+.node__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 1rem 1rem;
 }
-.teaser-details__author {
-  display: none;
+.node--view-mode-full .field--type-text-long,
+.node--view-mode-full .field--type-text-with-summary {
+  min-width: 100%;
 }
-.teaser-details__date {
-  color: #444;
-
-  font-size: 0.8rem;
-}
-.teaser-details__author {
-  color: #444;
-
-  font-size: 0.75rem;
+.node--view-mode-full .field--type-text-long img,
+.node--view-mode-full .field--type-text-with-summary img {
+  max-width: 100%;
 }
 
+/* ==========================================================================
+   Bigger screens
+   ========================================================================== */
 @media (min-width: 500px) {
   .node__content {
     margin-left: 0;
