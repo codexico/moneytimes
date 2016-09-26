@@ -1,94 +1,94 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-  display: flex;
+    display: flex;
 
-  width: 100%;
+    width: 100%;
 
-  background-color: #fff;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
 }
 .layout-content {
-  padding: 40px 1rem; /*logo img height when header fixed*/
+    padding: 40px 1rem; /*logo img height when header fixed*/
 }
 .site-slogan {
-  display: none;
+    display: none;
 }
 .region-primary-menu {
-  display: flex;
+    display: flex;
 
-  flex: 1;
+    flex: 1;
 }
 
 .site-logo_img {
-  height: 40px;
+    height: 40px;
 
-  -webkit-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 .menu--main {
-  display: flex;
+    display: flex;
 
-  flex: 1;
+    flex: 1;
 }
 .menu-link {
-  display: flex;
-  flex-direction: column;
+    display: flex;
 
-  width: 100%;
+    flex-direction: column;
+    justify-content: center;
 
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+    width: 100%;
 
-  color: #555;
-  border-left: 1px solid #ccc;
+    border-left: 1px solid #cccccc;
 
-  font-size: 0.8rem;
-  line-height: 3;
-
-  justify-content: center;
+    color: #555555;
+    font-size: 0.8rem;
+    line-height: 3;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .menu-link:first-child {
-  border-left: none;
+    border-left: none;
 }
 @media (min-width: 500px) {
-  .header {
-    display: block;
-    position: relative;
-  }
-  .layout-content {
-    padding-top: 0;
-  }
-  .site-logo {
-    padding: 0.4rem 0;
-  }
-  .site-logo_img {
-    height: 50px;
-  }
-  .site-slogan {
-    display: flex;
+    .header {
+        position: relative;
 
-    align-items: center;
-  }
-  .site-slogan__text {
-    width: 6rem;
-    margin-left: 0.8rem;
-    padding-left: 0.8rem;
+        display: block;
+    }
+    .layout-content {
+        padding-top: 0;
+    }
+    .site-logo {
+        padding: 0.4rem 0;
+    }
+    .site-logo_img {
+        height: 50px;
+    }
+    .site-slogan {
+        display: flex;
 
-    border-left: 2px solid #333;
+        align-items: center;
+    }
+    .site-slogan__text {
+        width: 6rem;
+        margin-left: 0.8rem;
+        padding-left: 0.8rem;
 
-    font-size: 0.6rem;
-  }
-  .block-system-branding-block {
-    display: flex;
+        border-left: 2px solid #333333;
 
-    border-bottom: 1px solid #ccc;
+        font-size: 0.6rem;
+    }
+    .block-system-branding-block {
+        display: flex;
 
-    justify-content: center;
-  }
+        justify-content: center;
+
+        border-bottom: 1px solid #cccccc;
+    }
 }

@@ -1,10 +1,12 @@
-*, *::after, *::before {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 body {
-  font-family: "Lucida Grande", Verdana, sans-serif;
+    font-family: "Lucida Grande", Verdana, sans-serif;
 }
 a > img {
-  vertical-align: middle;
+    vertical-align: middle;
 }
