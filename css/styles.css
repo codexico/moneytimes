@@ -2,50 +2,49 @@
    teaser
    ========================================================================== */
 .node--view-mode-teaser {
-  display: flex;
+    display: flex;
 
-  margin-bottom: 1rem;
-  padding: 0.7rem 1rem 1rem 1rem;
+    flex-wrap: wrap;
 
-  border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem 1rem 1rem;
 
-  flex-wrap: wrap;
+    border-bottom: 1px solid #eeeeee;
 }
 .node--view-mode-teaser.node--sticky {
-  background-color: #eee;
+    background-color: #eeeeee;
 }
 /* teaser content
    ========================================================================== */
 .field--name-field-resumo {
-  display: none;
+    display: none;
 
-  padding-left: 1.2rem;
+    flex: 1;
 
-  flex: 1;
+    padding-left: 1.2rem;
 }
 .field--name-field-resumo p:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 .node--view-mode-teaser .field--type-image img {
-  width: 100px;
-  max-width: 100%;
-  height: auto;
+    width: 100px;
+    max-width: 100%;
+    height: auto;
 }
 /* teaser details
    ========================================================================== */
 .node--teaser__teaser-details {
-  flex: 1 1 100%;
+    flex: 1 1 100%;
 }
 .teaser-details__author {
-  display: none;
-  color: #444;
+    display: none;
 
-  font-size: 0.75rem;
+    color: #444444;
+    font-size: 0.75rem;
 }
 .teaser-details__date {
-  color: #444;
-
-  font-size: 0.8rem;
+    color: #444444;
+    font-size: 0.8rem;
 }
 
 /* ==========================================================================
@@ -54,95 +53,106 @@
 /* node title
    ========================================================================== */
 .node__title {
-  margin: 0 0 1rem 0;
+    flex: 1;
 
-  font-size: 1.3rem;
+    margin: 0 0 1rem 0;
 
-  flex:1;
+    font-size: 1.3rem;
 }
 .node__title-link {
-  text-decoration: none;
-
-  color: #222;
+    color: #222222;
+    text-decoration: none;
 }
 /* node meta
    ========================================================================== */
 .node__submitted {
-  font-size: 0.8rem;
-  color: #444;
+    color: #444444;
+    font-size: 0.8rem;
 }
 .node__submitted .field--type-created {
-  color: #888;
+    color: #888888;
 }
 /* node content
    ========================================================================== */
 .node__content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 1rem 1rem;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    margin: 0 0 1rem 1rem;
 }
 .node--view-mode-full .field--type-text-long,
 .node--view-mode-full .field--type-text-with-summary {
-  min-width: 100%;
+    min-width: 100%;
 }
 .node--view-mode-full .field--type-text-long img,
 .node--view-mode-full .field--type-text-with-summary img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* tags
    ========================================================================== */
 .field--name-field-tags {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+
+    flex-wrap: wrap;
 }
 .field--name-field-tags .field__item {
-  display: flex;
-  margin-right: 1rem;
-  margin-bottom: 0.2rem;
+    display: flex;
+
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
 }
 .field--name-field-tags .field__item:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
+/* arrow left triangle */
 .field--name-field-tags .field__item:before {
-  /* arrow left triangle */
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 0.9rem solid transparent;
-  border-bottom: 0.9rem solid transparent;
-  border-right: 1rem solid #444;
+    width: 0;
+    height: 0;
+
+    border-top: 0.9rem solid transparent;
+    border-right: 1rem solid #444444;
+    border-bottom: 0.9rem solid transparent;
+
+    content: "";
 }
-.field--name-field-tags .field__item a:before{
-  /* hole */
-  content: "";
-  width: 4px;
-  height: 4px;
-  border-radius: 2px;
-  background: #fff;
-  margin: 0 0.6rem 0 -0.6rem; /* position inside the triangle*/
-  align-self: center;
+/* hole */
+.field--name-field-tags .field__item a:before {
+    align-self: center;
+
+    width: 4px;
+    height: 4px;
+    margin: 0 0.6rem 0 -0.6rem; /* position inside the triangle*/
+
+    border-radius: 2px;
+    background: #ffffff;
+
+    content: "";
 }
 .field--name-field-tags .field__item a {
-  text-decoration: none;
-  background-color: #444;
-  padding: 0.3rem 0.5rem 0.3rem 0.3rem;
-  border-radius: 0 0.2rem 0.2rem 0;
-  color: #fff;
-  display: flex;
+    display: flex;
+
+    padding: 0.3rem 0.5rem 0.3rem 0.3rem;
+
+    border-radius: 0 0.2rem 0.2rem 0;
+    background-color: #444444;
+
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* ==========================================================================
    Bigger screens
    ========================================================================== */
 @media (min-width: 500px) {
-  .node__content {
-    margin-left: 0;
-  }
-  .node__title {
-    flex: 1 1 100%;
-  }
-  .field--name-field-resumo {
-    display: initial;
-  }
+    .node__content {
+        margin-left: 0;
+    }
+    .node__title {
+        flex: 1 1 100%;
+    }
+    .field--name-field-resumo {
+        display: initial;
+    }
 }
