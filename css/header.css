@@ -1,6 +1,8 @@
-.layout-content {
-    padding: 3rem 1rem; /*logo img height when header fixed*/
+/* space for the fixed header */
+.layout-container {
+    padding: 3rem 1rem;
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -96,7 +98,7 @@
 
 
 @media (min-width: 500px) {
-    .layout-content {
+    .layout-container {
         padding: 8rem 1rem;
 
         transition-duration: 0.3s;
