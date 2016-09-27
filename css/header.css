@@ -85,8 +85,10 @@
     padding: 0;
 }
 .menu--assuntos .menu a {
+    padding: 0 0.4rem;
+
     color: #555555;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     transition-duration: 0.3s;
     text-decoration: none;
     text-transform: uppercase;

@@ -5,6 +5,7 @@ base:
       css/base.css: {}
       css/styles.css: {}
       css/header.css: {}
+      css/sidebar.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}

@@ -1,5 +1,7 @@
 main {
     display: flex;
+
+    flex-direction: column;
 }
 
 /* ==========================================================================
@@ -151,6 +153,9 @@ main {
    Bigger screens
    ========================================================================== */
 @media (min-width: 500px) {
+    main {
+        flex-direction: initial;
+    }
     .node__content {
         margin-left: 0;
     }

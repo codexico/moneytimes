@@ -1,0 +1,19 @@
+@media (min-width: 500px) {
+    .region-sidebar-second {
+        width: 16rem;
+        padding-left: 0.4rem;
+    }
+
+    .block-search {
+        position: fixed;
+        top: 10rem;
+
+        width: 16rem;
+    }
+
+    .menu--fixed .block-search {
+        top: 3rem;
+
+        transition-duration: 0.3s;
+    }
+}
