@@ -94,8 +94,6 @@
     }
     .header {
         flex-wrap: wrap;
-
-        transition-duration: 0.3s;
     }
     .site-logo {
         padding: 0.4rem 0;
@@ -111,8 +109,6 @@
         display: flex;
 
         align-items: center;
-
-        transition-duration: 0.3s;
     }
     .site-slogan__text {
         width: 6rem;
@@ -132,22 +128,16 @@
         width: 100%;
 
         border-bottom: 1px solid #cccccc;
-
-        transition-duration: 0.3s;
     }
     /* menu fixed
    ======================================================================== */
     .menu--fixed .block-system-branding-block {
         width: auto;
-
-        transition-duration: 0.3s;
     }
     .menu--fixed .header {
         display: flex;
 
         align-items: center;
-
-        transition-duration: 0.3s;
     }
     .menu--fixed .site-logo {
         padding: 0.1rem 0.4rem;
@@ -161,8 +151,6 @@
     }
     .menu--fixed .site-slogan {
         display: none;
-
-        transition-duration: 0.3s;
     }
     .menu--fixed .menu {
         margin: 0;
@@ -184,8 +172,6 @@
         display: flex;
 
         align-items: center;
-
-        transition-duration: 0.3s;
     }
 }
 
