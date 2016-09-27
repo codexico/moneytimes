@@ -19,7 +19,10 @@
     display: none;
 }
 .region-primary-menu {
+    display: flex;
+
     flex: 1;
+    align-items: center;
 }
 
 .site-logo_img {
@@ -67,11 +70,17 @@
 .menu--assuntos .menu {
     display: flex;
 
+    flex-wrap: wrap;
     justify-content: space-around;
 
     width: 100%;
+    margin: 0;
 
     transition-duration: 0.3s;
+}
+.menu--assuntos .menu-item {
+    margin: 0;
+    padding: 0;
 }
 .menu--assuntos .menu a {
     color: #555555;
@@ -129,10 +138,16 @@
 
         border-bottom: 1px solid #cccccc;
     }
+
+    .menu--assuntos .menu-item {
+        line-height: 3;
+    }
     /* menu fixed
    ======================================================================== */
     .menu--fixed .block-system-branding-block {
         width: auto;
+
+        border: none;
     }
     .menu--fixed .header {
         display: flex;
@@ -151,11 +166,6 @@
     }
     .menu--fixed .site-slogan {
         display: none;
-    }
-    .menu--fixed .menu {
-        margin: 0;
-
-        transition-duration: 0.3s;
     }
     .menu--fixed .menu-item {
         display: flex;
