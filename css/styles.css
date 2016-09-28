@@ -3,6 +3,9 @@ main {
 
     flex-direction: column;
 }
+.layout-content {
+  width: 100%;
+}
 
 /* ==========================================================================
    teaser
