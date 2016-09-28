@@ -10,10 +10,16 @@
 
         width: 16rem;
     }
-
     .menu--fixed .block-search {
         top: 3rem;
 
         transition-duration: 0.3s;
+    }
+
+    .block-mailchimp-signup {
+        position: fixed;
+        top: 13rem;
+
+        width: 16rem;
     }
 }
