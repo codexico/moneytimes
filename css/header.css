@@ -5,7 +5,7 @@
 
 .header {
     position: fixed;
-    top: 0;
+    top: -1px; /* fix content appearing behind */
     left: 0;
 
     display: flex;
@@ -13,6 +13,8 @@
     align-items: center;
 
     width: 100%;
+    margin: 0;
+    padding-top: 1px; /* fix content appearing behind */
 
     background-color: #ffffff;
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
@@ -40,23 +42,19 @@
 }
 
 .menu--main {
-    display: flex;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 
-    flex: 1;
+    display: none;
 }
 .menu-link {
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-
-    width: 100%;
+    padding: 0.5rem 1rem;
 
     border-left: 1px solid #cccccc;
 
     color: #555555;
     font-size: 0.8rem;
-    line-height: 3;
     transition-duration: 0.3s;
     text-align: center;
     text-decoration: none;
@@ -105,6 +103,7 @@
     display: flex;
 
     flex-direction: column;
+
     font-size: 0.8rem;
 }
 .social-icon {
@@ -164,6 +163,9 @@
         border-bottom: 1px solid #cccccc;
     }
 
+    .menu--main {
+        display: block;
+    }
     .menu--assuntos .menu-item {
         line-height: 3;
     }
@@ -192,6 +194,9 @@
     .menu--fixed .site-slogan {
         display: none;
     }
+    .menu--fixed .menu--main {
+        display: none;
+    }
     .menu--fixed .menu-item {
         display: flex;
 
@@ -211,6 +216,8 @@
 
     .social-icons {
         flex-direction: row;
+
+        margin-right: 0.2rem;
 
         font-size: 1.2rem;
     }
