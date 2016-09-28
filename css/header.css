@@ -10,6 +10,8 @@
 
     display: flex;
 
+    align-items: center;
+
     width: 100%;
 
     background-color: #ffffff;
@@ -96,6 +98,25 @@
 
 .block-search {
     width: 16rem;
+}
+
+
+.social-icons {
+    display: flex;
+
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+.social-icon {
+    display: inline-flex;
+
+    justify-content: center;
+
+    width: 1rem;
+    margin: 0.1rem 0.2rem;
+
+    color: #555555;
+    text-decoration: none;
 }
 
 
@@ -187,19 +208,10 @@
 
         align-items: center;
     }
-}
 
+    .social-icons {
+        flex-direction: row;
 
-.social-icons {
-    align-self: center;
-}
-.social-icon {
-    display: inline-flex;
-
-    width: 1rem;
-    margin: 0.2rem;
-
-    color: #555555;
-    font-size: 1rem;
-    text-decoration: none;
+        font-size: 1.2rem;
+    }
 }
