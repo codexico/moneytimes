@@ -1,6 +1,10 @@
 @media (min-width: 500px) {
+    .layout-sidebar-second,
     .region-sidebar-second {
-        width: 16rem;
+        min-width: 16rem;
+        min-height: 0.5vh;
+    }
+    .region-sidebar-second {
         padding-left: 0.4rem;
     }
 
@@ -21,5 +25,11 @@
         top: 13rem;
 
         width: 16rem;
+    }
+
+    .region-sidebar-second .block-adsense,
+    .region-sidebar-second .adsense {
+        width: 16rem;
+        height: 16rem;
     }
 }
