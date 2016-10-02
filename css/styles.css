@@ -4,7 +4,7 @@ main {
     flex-direction: column;
 }
 .layout-content {
-  width: 100%;
+    width: 100%;
 }
 
 /* ==========================================================================
@@ -152,6 +152,9 @@ main {
     text-decoration: none;
 }
 
+.adsense_cabecalho {
+    display: none;
+}
 /* ==========================================================================
    Bigger screens
    ========================================================================== */
@@ -167,6 +170,9 @@ main {
     }
     .field--name-field-resumo {
         display: initial;
+    }
+    .adsense_cabecalho {
+        display: block;
     }
 }
 
