@@ -6,6 +6,9 @@ base:
       css/styles.css: {}
       css/header.css: {}
       css/sidebar.css: {}
+      css/teaser.css: {}
+      css/tags.css: {}
+      css/node.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}
