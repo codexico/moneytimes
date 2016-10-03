@@ -6,6 +6,7 @@
 .header {
     position: fixed;
     top: -1px; /* fix content appearing behind */
+    right: 0;
     left: 0;
 
     display: flex;
@@ -20,9 +21,6 @@
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
 
     transition-duration: 0.3s;
-}
-.site-slogan {
-    display: none;
 }
 .region-primary-menu {
     display: flex;
@@ -41,6 +39,21 @@
             filter: grayscale(100%);
 }
 
+.site-slogan {
+    display: flex;
+
+    align-items: center;
+}
+.site-slogan__text {
+    width: 7rem;
+    margin-left: 0.8rem;
+    padding-left: 0.8rem;
+
+    border-left: 2px solid #333333;
+
+    font-size: 0.6rem;
+    transition-duration: 0.3s;
+}
 .menu--main {
     position: absolute;
     top: 2rem;
@@ -142,16 +155,6 @@
         display: flex;
 
         align-items: center;
-    }
-    .site-slogan__text {
-        width: 6rem;
-        margin-left: 0.8rem;
-        padding-left: 0.8rem;
-
-        border-left: 2px solid #333333;
-
-        font-size: 0.6rem;
-        transition-duration: 0.3s;
     }
     .block-system-branding-block {
         display: flex;
