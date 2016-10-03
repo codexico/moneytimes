@@ -9,6 +9,7 @@ base:
       css/teaser.css: {}
       css/tags.css: {}
       css/node.css: {}
+      css/header-open.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}

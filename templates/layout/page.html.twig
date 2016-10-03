@@ -46,27 +46,38 @@
 
   <header class="header">
     {{ page.header }}
+
+       <input type="checkbox" class="menu-hamburger_toggle" />
+      <div class="hamburger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+
+      <div class="menu-hamburger">
     {{ page.primary_menu }}
-    <div class="social-icons">
-        <a
+      <div class="social-icons">
+          <a
           class="social-icon"
           target="_blank"
           href="https://twitter.com/leiamoneytimes/">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a
           class="social-icon"
           target="_blank"
           href="https://www.facebook.com/moneytimesbr/">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a
           class="social-icon"
           target="_blank"
           href="https://www.linkedin.com/company/moneytimes/">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-    </div>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+      </div> <!-- .social-icons -->
+
+      </div> <!-- .menu-hamburger -->
   </header>
 
   {{ page.secondary_menu }}

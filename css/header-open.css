@@ -1,0 +1,174 @@
+@media (max-width: 500px) {
+    .menu-hamburger_toggle {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+
+        display: flex;
+
+        width: 3rem;
+        height: 3rem;
+        margin: 0;
+        padding: 0;
+
+        opacity: 0;
+        background-color: rgba(255,255,255,0.97);
+
+        cursor: pointer;
+
+        -webkit-touch-callout: none;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .block-system-branding-block {
+        display: flex;
+
+        flex: 1;
+    }
+
+    .menu-hamburger .region-primary-menu {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .menu-hamburger .menu--main {
+        position: initial;
+
+        display: flex;
+
+        flex-direction: column;
+        order: 2;
+
+        width: 33%;
+    }
+
+    .menu-hamburger .menu--assuntos .menu {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0;
+
+        transition-duration: 0.6s;
+    }
+
+    .menu-link {
+        border-left: none;
+    }
+    .menu-link:first-child {
+        margin-top: 1rem;
+        padding-top: 1rem;
+
+        border-top: 1px solid #cccccc;
+    }
+    .menu-link:last-child {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .menu-hamburger {
+        width: 100%;
+        height: 0;
+
+        opacity: 0;
+
+        transition-duration: 0.6s;
+    }
+
+    .menu-hamburger .social-icons {
+        align-items: center;
+    }
+
+    .menu--assuntos {
+        width: 33%;
+
+        line-height: 2;
+    }
+    .menu--assuntos .menu-item:first-child {
+        display: flex;
+
+        justify-content: center;
+
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 0.7rem;
+
+        border-top: 1px solid #cccccc;
+    }
+
+    .social-icon {
+        font-size: 1.7rem;
+    }
+
+    .social-icon .fa {
+        line-height: 2;
+    }
+
+    /*
+     * https://codepen.io/erikterwan/pen/EVzeRP
+     */
+    .hamburger-button {
+        width: 2rem;
+        margin-right: 0.6rem;
+    }
+
+    .hamburger-button span {
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+
+        width: 2rem;
+        height: 4px;
+        margin-bottom: 5px;
+
+        border-radius: 3px;
+        background: #cdcdcd;
+
+        transition: transform 0.3s ease-in-out,
+        width 0.5s ease-in-out;
+        transform-origin: 0 0;
+    }
+
+    .menu-hamburger_toggle:checked ~ .menu-hamburger {
+        position: absolute;
+        z-index: 9;
+        top: 3rem;
+        bottom: 0;
+
+        overflow-y: scroll;
+
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 8rem; /* google ads */
+
+        opacity: 1;
+        background-color: #ffffff;
+    }
+
+    .menu-hamburger_toggle:checked ~ .hamburger-button span:nth-last-child(1) {
+        transform: rotate(-45deg) translate(-0rem, -0rem);
+    }
+
+    .menu-hamburger_toggle:checked ~ .hamburger-button span:nth-last-child(3) {
+        transform: rotate(45deg) translate(0rem, -0.3rem);
+    }
+
+    .menu-hamburger_toggle ~ .hamburger-button span:nth-last-child(2) {
+        width: 2rem;
+    }
+
+    .menu-hamburger_toggle:checked ~ .hamburger-button span:nth-last-child(2) {
+        width: 0;
+
+        transition-duration: 0.2s;
+    }
+}

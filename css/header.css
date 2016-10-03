@@ -224,4 +224,14 @@
 
         font-size: 1.2rem;
     }
+    .menu-hamburger {
+        display: flex;
+
+        flex: 1;
+        align-items: center;
+    }
+    .menu-hamburger_toggle,
+    .hamburger-button {
+        display: none;
+    }
 }
