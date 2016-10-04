@@ -1,7 +1,7 @@
 @media (max-width: 500px) {
     .menu-hamburger_toggle {
         position: absolute;
-        z-index: 2;
+        z-index: 99;
         top: 0;
         right: 0;
 
@@ -25,9 +25,13 @@
     }
 
     .block-system-branding-block {
+        z-index: 10;
+
         display: flex;
 
         flex: 1;
+
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
     }
 
     .menu-hamburger .region-primary-menu {
@@ -116,6 +120,10 @@
      * https://codepen.io/erikterwan/pen/EVzeRP
      */
     .hamburger-button {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+
         width: 2rem;
         margin-right: 0.6rem;
     }
@@ -140,7 +148,7 @@
 
     .menu-hamburger_toggle:checked ~ .menu-hamburger {
         position: absolute;
-        z-index: 9;
+        z-index: 2;
         top: 3rem;
         bottom: 0;
 

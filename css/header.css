@@ -19,7 +19,7 @@
     padding-top: 1px; /* fix content appearing behind */
 
     background-color: #ffffff;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
+    /*box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);*/
 
     transition-duration: 0.3s;
 }
