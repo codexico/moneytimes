@@ -10,6 +10,7 @@ base:
       css/tags.css: {}
       css/node.css: {}
       css/header-open.css: {}
+      css/search_form.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}

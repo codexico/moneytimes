@@ -1,0 +1,28 @@
+.search_form {
+    display: flex;
+
+    align-items: center;
+}
+.search_form .form-item,
+.search_form .form-actions {
+    margin: 0;
+}
+
+.search_form-icons {
+    padding: 0 0.2rem;
+
+    font-size: 1.2rem;
+}
+
+.search_form .form-submit {
+    /* visually-hidden */
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px;
+    height: 1px;
+
+    word-wrap: normal;
+}
