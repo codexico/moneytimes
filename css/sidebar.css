@@ -1,3 +1,7 @@
+.mailchimp-newsletter-mergefields label {
+    display: none;
+}
+
 @media (min-width: 500px) {
     .layout-sidebar-second,
     .region-sidebar-second {
@@ -8,24 +12,21 @@
         padding-left: 0.4rem;
     }
 
-    .block-search {
+    .block-mailchimp-signup {
         position: fixed;
-        top: 10rem;
+        top: 8rem;
 
         width: 16rem;
-    }
-    .menu--fixed .block-search {
-        top: 3rem;
 
         -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;
     }
 
-    .block-mailchimp-signup {
-        position: fixed;
-        top: 13rem;
+    .menu--fixed .block-mailchimp-signup {
+        top: 3rem;
 
-        width: 16rem;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
     }
 
     .region-sidebar-second .block-adsense,
