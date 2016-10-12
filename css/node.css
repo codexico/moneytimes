@@ -1,7 +1,9 @@
 /* node title
    ========================================================================== */
 .node__title {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 
     margin: 0 0 1rem 0;
 
@@ -23,9 +25,13 @@
 /* node content
    ========================================================================== */
 .node__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
 
     margin: 0 0 1rem 1rem;
 }
@@ -45,7 +51,9 @@
         margin-left: 0;
     }
     .node__title {
-        flex: 1 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
     }
 }
 

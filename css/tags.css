@@ -1,9 +1,15 @@
 .field--name-field-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
 }
 .field--name-field-tags .field__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     margin-right: 1rem;
@@ -25,7 +31,9 @@
 }
 /* hole */
 .field--name-field-tags .field__item a:before {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 
     width: 4px;
     height: 4px;
@@ -37,6 +45,8 @@
     content: "";
 }
 .field--name-field-tags .field__item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     padding: 0.3rem 0.5rem 0.3rem 0.3rem;

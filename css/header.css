@@ -10,9 +10,17 @@
     right: 0;
     left: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
 
     width: 100%;
     margin: 0;
@@ -20,19 +28,31 @@
 
     background-color: #ffffff;
 
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+
+            transition-duration: 0.3s;
 }
 .region-primary-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    flex: 1;
-    align-items: center;
+    -webkit-box-flex: 1;
+
+        -ms-flex: 1;
+
+            flex: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .site-logo_img {
     height: 3rem;
 
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+
+            transition-duration: 0.3s;
 
     -webkit-filter: grayscale(100%);
          -o-filter: grayscale(100%);
@@ -40,9 +60,15 @@
 }
 
 .site-slogan {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
 }
 .site-slogan__text {
     width: 7rem;
@@ -52,7 +78,8 @@
     border-left: 2px solid #333333;
 
     font-size: 0.6rem;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
 }
 .menu-link {
     padding: 0.5rem 1rem;
@@ -61,7 +88,8 @@
 
     color: #555555;
     font-size: 0.8rem;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -73,18 +101,27 @@
 .menu--assuntos {
     width: 100%;
 
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+
+            transition-duration: 0.3s;
 }
 .menu--assuntos .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
     width: 100%;
     margin: 0;
 
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+
+            transition-duration: 0.3s;
 }
 .menu--assuntos .menu-item {
     margin: 0;
@@ -95,7 +132,8 @@
 
     color: #555555;
     font-size: 0.65rem;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -121,32 +159,51 @@
     .layout-container {
         padding: 8rem 1rem;
 
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+                transition-duration: 0.3s;
     }
     .header {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
     }
     .site-logo {
         padding: 0.4rem 0;
 
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+                transition-duration: 0.3s;
     }
     .site-logo_img {
         height: 4rem;
 
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+                transition-duration: 0.3s;
     }
     .site-slogan {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
-        align-items: center;
+        -webkit-box-align: center;
+
+            -ms-flex-align: center;
+
+                align-items: center;
     }
     .block-system-branding-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
-        justify-content: center;
+        -webkit-box-pack: center;
+
+            -ms-flex-pack: center;
+
+                justify-content: center;
 
         width: 100%;
 
@@ -171,19 +228,29 @@
         border: none;
     }
     .menu--fixed .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
-        align-items: center;
+        -webkit-box-align: center;
+
+            -ms-flex-align: center;
+
+                align-items: center;
     }
     .menu--fixed .site-logo {
         padding: 0.1rem 0.4rem;
 
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+                transition-duration: 0.3s;
     }
     .menu--fixed .site-logo_img {
         height: 2rem;
 
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+                transition-duration: 0.3s;
     }
     .menu--fixed .site-slogan {
         display: none;
@@ -192,41 +259,74 @@
         display: none;
     }
     .menu--fixed .menu-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         padding: 0;
 
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+                transition-duration: 0.3s;
     }
     .menu--fixed .menu--assuntos .menu a {
         font-size: 0.6rem;
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
     }
     .menu--fixed .menu--assuntos {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
-        align-items: center;
+        -webkit-box-align: center;
+
+            -ms-flex-align: center;
+
+                align-items: center;
     }
 
     .social-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: row;
+
+                flex-direction: row;
 
         margin-right: 0.2rem;
 
         font-size: 1.2rem;
     }
     .social-icon {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
 
-        justify-content: center;
+        -webkit-box-pack: center;
+
+            -ms-flex-pack: center;
+
+                justify-content: center;
     }
     .menu-hamburger {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
-        flex: 1;
-        align-items: center;
+        -webkit-box-flex: 1;
+
+            -ms-flex: 1;
+
+                flex: 1;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .menu-hamburger_toggle,
     .hamburger-button {
