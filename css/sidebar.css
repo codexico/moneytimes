@@ -20,6 +20,7 @@
 
     .block-mailchimp-signup {
         width: 16rem;
+        margin-bottom: 2rem;
 
         -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;

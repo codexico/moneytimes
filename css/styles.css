@@ -31,5 +31,7 @@ main {
     .adsense_cabecalho,
     .block-adsense-managed-ad-block {
         display: block;
+
+        margin-top: 1rem;
     }
 }
