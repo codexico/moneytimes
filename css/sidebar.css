@@ -31,10 +31,4 @@
         -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;
     }
-
-    .region-sidebar-second .block-adsense,
-    .region-sidebar-second .adsense {
-        width: 16rem;
-        height: 16rem;
-    }
 }
