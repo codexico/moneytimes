@@ -2,12 +2,6 @@
     display: none;
 }
 
-.region-sidebar-second {
-    position: fixed;
-    top: 8rem;
-}
-
-
 @media (min-width: 500px) {
     .layout-sidebar-second,
     .region-sidebar-second {
@@ -15,6 +9,9 @@
         min-height: 0.5vh;
     }
     .region-sidebar-second {
+        position: fixed;
+        top: 8rem;
+
         padding-left: 0.4rem;
     }
 
