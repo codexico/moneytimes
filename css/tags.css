@@ -5,6 +5,8 @@
 
         flex-wrap: wrap;
 
+    margin: 1rem 0;
+
     -ms-flex-wrap: wrap;
 }
 .field--name-field-tags .field__item {
