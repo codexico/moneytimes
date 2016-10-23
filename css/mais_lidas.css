@@ -1,0 +1,10 @@
+.view-mais-lidas .views-row {
+    margin-bottom: 0.4rem;
+}
+.view-mais-lidas img {
+    max-width: 100%;
+    height: auto;
+}
+.view-mais-lidas .node__title--card {
+    margin-top: 0;
+}

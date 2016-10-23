@@ -12,6 +12,7 @@ base:
       css/header-open.css: {}
       css/search_form.css: {}
       css/card.css: {}
+      css/mais_lidas.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}

@@ -17,6 +17,19 @@ main {
 .block-adsense-managed-ad-block {
     display: none;
 }
+
+
+@media (min-width: 500px) {
+    .layout-sidebar-first {
+        order: -1;
+
+        min-width: 12rem;
+        max-width: 25rem;
+        padding: 0 0.4rem;
+    }
+}
+
+
 /* ==========================================================================
    Bigger screens
    ========================================================================== */
