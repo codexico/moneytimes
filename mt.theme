@@ -8,6 +8,3 @@ function mt_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'mt';
 }
 
-function mt_preprocess_block(&$variables){
-  dpm($variables);
-}
