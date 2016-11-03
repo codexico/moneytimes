@@ -2,7 +2,6 @@
 .layout-container {
     padding: 3rem 1rem;
 }
-
 .header {
     position: fixed;
     z-index: 1;
@@ -20,7 +19,7 @@
     margin: 0;
     padding-top: 1px; /* fix content appearing behind */
 
-    background-color: #ffffff;
+    background-color: #272C2E;
 
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
@@ -47,10 +46,6 @@
 
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
-
-    -webkit-filter: grayscale(100%);
-         -o-filter: grayscale(100%);
-            filter: grayscale(100%);
 }
 
 .site-slogan {
@@ -68,19 +63,21 @@
     margin-left: 0.8rem;
     padding-left: 0.8rem;
 
-    border-left: 2px solid #333333;
+    border-left: 1px solid #343c40;
 
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
+
+    color: #D3D3D3;
 }
 .menu-link {
     padding: 0.5rem 1rem;
 
-    border-left: 1px solid #cccccc;
+    border-left: 1px solid #343c40;
 
-    color: #555555;
-    font-size: 0.8rem;
+    color: #AAB0B8;
+    font-size: 0.7rem;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
     text-align: center;
@@ -121,12 +118,16 @@
 .menu--assuntos .menu a {
     padding: 0 0.4rem;
 
-    color: #555555;
-    font-size: 0.65rem;
+    color: #E6E6E6;
+    font-size: 0.85rem;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.menu-hamburger{
+    background-color: #343C40;
 }
 
 .block-search {
@@ -141,14 +142,14 @@
     width: 1rem;
     margin: 0.1rem 0.2rem;
 
-    color: #555555;
+    color: #E6E6E6;
     text-decoration: none;
 }
 
 
 @media (min-width: 500px) {
     .layout-container {
-        padding: 8rem 1rem;
+        padding: 10rem 1rem;
 
         -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;
@@ -161,13 +162,13 @@
         -ms-flex-wrap: wrap;
     }
     .site-logo {
-        padding: 0.4rem 0;
+        padding: 1.2rem 0;
 
         -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;
     }
     .site-logo_img {
-        height: 4rem;
+        height: 56px;
 
         -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;
@@ -191,15 +192,13 @@
 
         width: 100%;
 
-        border-bottom: 1px solid #cccccc;
-
         -webkit-box-pack: center;
         -ms-flex-pack: center;
     }
 
     .menu--main {
         position: absolute;
-        top: 2rem;
+        top: 2.3rem;
         right: 2rem;
 
         display: block;
@@ -223,6 +222,8 @@
 
         -webkit-box-align: center;
         -ms-flex-align: center;
+
+        background-color: #343C40;
     }
     .menu--fixed .site-logo {
         padding: 0.1rem 0.4rem;
