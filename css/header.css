@@ -19,7 +19,7 @@
     margin: 0;
     padding-top: 1px; /* fix content appearing behind */
 
-    background-color: #272C2E;
+    background-color: #272c2e;
 
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
@@ -65,18 +65,17 @@
 
     border-left: 1px solid #343c40;
 
+    color: #d3d3d3;
     font-size: 0.7rem;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
-
-    color: #D3D3D3;
 }
 .menu-link {
     padding: 0.5rem 1rem;
 
     border-left: 1px solid #343c40;
 
-    color: #AAB0B8;
+    color: #aab0b8;
     font-size: 0.7rem;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
@@ -118,7 +117,7 @@
 .menu--assuntos .menu a {
     padding: 0 0.4rem;
 
-    color: #E6E6E6;
+    color: #e6e6e6;
     font-size: 0.85rem;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
@@ -126,8 +125,8 @@
     text-transform: uppercase;
 }
 
-.menu-hamburger{
-    background-color: #343C40;
+.menu-hamburger {
+    background-color: #343c40;
 }
 
 .block-search {
@@ -142,7 +141,7 @@
     width: 1rem;
     margin: 0.1rem 0.2rem;
 
-    color: #E6E6E6;
+    color: #e6e6e6;
     text-decoration: none;
 }
 
@@ -220,10 +219,10 @@
 
         align-items: center;
 
+        background-color: #343c40;
+
         -webkit-box-align: center;
         -ms-flex-align: center;
-
-        background-color: #343C40;
     }
     .menu--fixed .site-logo {
         padding: 0.1rem 0.4rem;

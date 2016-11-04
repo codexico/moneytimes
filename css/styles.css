@@ -21,7 +21,9 @@ main {
 
 @media (min-width: 800px) {
     .layout-sidebar-first {
-        order: -1;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
 
         min-width: 320px; /* adsense */
         max-width: 25rem;
@@ -35,7 +37,7 @@ main {
    ========================================================================== */
 @media (min-width: 800px) {
     main {
-        flex-direction: initial;
+            flex-direction: initial;
 
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
