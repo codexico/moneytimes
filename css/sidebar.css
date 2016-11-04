@@ -5,7 +5,7 @@
 @media (min-width: 500px) {
     .layout-sidebar-second,
     .region-sidebar-second {
-        min-width: 16rem;
+        min-width: 320px; /* adsense */
         min-height: 0.5vh;
     }
     .region-sidebar-second {

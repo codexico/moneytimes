@@ -23,7 +23,7 @@ main {
     .layout-sidebar-first {
         order: -1;
 
-        min-width: 300px; /* adsense */
+        min-width: 320px; /* adsense */
         max-width: 25rem;
         padding: 0 0.4rem;
     }
