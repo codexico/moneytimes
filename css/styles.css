@@ -19,7 +19,7 @@ main {
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
     .layout-sidebar-first {
         order: -1;
 
@@ -33,9 +33,9 @@ main {
 /* ==========================================================================
    Bigger screens
    ========================================================================== */
-@media (min-width: 500px) {
+@media (min-width: 800px) {
     main {
-            flex-direction: initial;
+        flex-direction: initial;
 
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;

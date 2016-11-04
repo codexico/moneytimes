@@ -53,7 +53,7 @@
     color: #444444;
     font-size: 0.8rem;
 }
-@media (min-width: 500px) {
+@media (min-width: 1130px) {
     .field--name-field-resumo {
         display: initial;
     }

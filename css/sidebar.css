@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
     .layout-sidebar-second,
     .region-sidebar-second {
         min-width: 320px; /* adsense */
