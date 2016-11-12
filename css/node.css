@@ -32,7 +32,7 @@
 
         flex-wrap: wrap;
 
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1rem 0;
 
     -ms-flex-wrap: wrap;
 }
@@ -43,6 +43,12 @@
 .node--view-mode-full .field--type-text-long img,
 .node--view-mode-full .field--type-text-with-summary img {
     max-width: 100%;
+}
+.node--type-noticia p {
+    line-height: 1.5;
+}
+.node--type-noticia img {
+    margin: 1em 0;
 }
 /* ==========================================================================
    Bigger screens

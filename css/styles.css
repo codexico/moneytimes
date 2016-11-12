@@ -20,14 +20,16 @@ main {
 
 
 @media (min-width: 800px) {
+    .layout-content {
+        padding: 0 1.4rem;
+    }
     .layout-sidebar-first {
         -webkit-box-ordinal-group: 0;
             -ms-flex-order: -1;
                 order: -1;
 
-        min-width: 320px; /* adsense */
+        min-width: 305px; /* investing.com */
         max-width: 25rem;
-        padding: 0 0.4rem;
     }
 }
 

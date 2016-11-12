@@ -38,7 +38,6 @@
             flex: 1;
 
         background-color: #272c2e;
-        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
 
         -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -84,12 +83,12 @@
     .menu-link:first-child {
         margin-top: 1rem;
 
-        border-top: 1px solid #cccccc;
+        border-top: 1px solid #343c40;
     }
     .menu-link:last-child {
         margin-bottom: 1rem;
 
-        border-bottom: 1px solid #cccccc;
+        border-bottom: 1px solid #343c40;
     }
 
     .menu-hamburger {
@@ -194,7 +193,7 @@
         padding-bottom: 8rem; /* google ads */
 
         opacity: 1;
-        background-color: #ffffff;
+        background-color: #272c2e;
     }
 
     .menu-hamburger_toggle:checked ~ .hamburger-button span:nth-last-child(1) {
