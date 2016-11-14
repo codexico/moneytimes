@@ -13,6 +13,7 @@ base:
       css/search_form.css: {}
       css/card.css: {}
       css/mais_lidas.css: {}
+      css/footer.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}
