@@ -45,7 +45,8 @@
 }
 
 .site-logo_img {
-    height: 2.4rem;
+    height: 13px;
+    margin-top: 13px;
 
     -webkit-transition-duration: 0.15s;
             transition-duration: 0.15s;
@@ -181,6 +182,7 @@
     }
     .site-logo_img {
         height: 34px;
+        margin-top: 0;
 
         -webkit-transition-duration: 0.15s;
                 transition-duration: 0.15s;

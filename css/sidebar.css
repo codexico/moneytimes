@@ -48,6 +48,7 @@
 }
 #block-moedas {
     margin-left: -0.7rem;
+    overflow-x: scroll;
 }
 
 @media (min-width: 800px) {
