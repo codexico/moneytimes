@@ -1,5 +1,7 @@
 footer .region-footer {
-    padding: 4rem 4rem 2rem;
+    padding: 0.8rem 4rem 0.4rem;
     background-color: #272c2e;
     color: #fff;
+    margin-bottom: 0;
+    font-size: 0.8rem;
 }
