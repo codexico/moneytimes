@@ -1,16 +1,18 @@
-.block-view{
+.block-view {
     margin-bottom: 2.15rem;
 }
-.block-views h2{
+.block-views h2 {
     margin-bottom: 1.4rem;
+
+    color: #272c2e;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #272c2e;
 }
 .view-mais-lidas .views-row {
     margin-bottom: 1.15rem;
     padding-bottom: 0.85rem;
-    border-bottom: 1px solid #eee;
+
+    border-bottom: 1px solid #eeeeee;
 }
 .view-mais-lidas img {
     max-width: 100%;
@@ -30,7 +32,7 @@
     margin-bottom: 1.4rem;
 }
 .view-mais-lidas .views-field-title a {
-    color: #222;
+    color: #222222;
     font-size: 0.9rem;
     font-weight: normal;
     text-decoration: none;

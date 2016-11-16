@@ -5,6 +5,8 @@ main {
 
         flex-direction: column;
 
+    width: 100%;
+
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -13,42 +15,42 @@ main {
     width: 100%;
 }
 
+#block-adsensecabecalho,
 .adsense_cabecalho,
 .block-adsense-managed-ad-block {
     display: none;
 }
 
+.layout-sidebar-first {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+}
 
-@media (min-width: 800px) {
+.view-frontpage {
+    padding: 1rem;
+}
+
+@media (min-width: 1024px) {
     .layout-content {
-        padding: 0 1.4rem;
+        padding: 0;
     }
     .layout-sidebar-first {
-        -webkit-box-ordinal-group: 0;
-            -ms-flex-order: -1;
-                order: -1;
-
         min-width: 305px; /* investing.com */
         max-width: 25rem;
     }
-}
-
-
-/* ==========================================================================
-   Bigger screens
-   ========================================================================== */
-@media (min-width: 800px) {
-    main {
-            flex-direction: initial;
-
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: initial;
-    }
+    #block-adsensecabecalho,
     .adsense_cabecalho,
     .block-adsense-managed-ad-block {
         display: block;
 
         margin-top: 1rem;
+
+        text-align: center;
+    }
+    .main-layout-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
     }
 }

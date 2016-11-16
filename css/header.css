@@ -1,6 +1,7 @@
 /* space for the fixed header */
 .layout-container {
-    padding: 3rem 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .header {
     position: fixed;
@@ -18,11 +19,10 @@
     width: 100%;
     margin: 0;
     padding: 0.5rem;
-    /*padding-top: 1px;*/ /* fix content appearing behind */
-
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     background-color: #272c2e;
+    /*padding-top: 1px;*/ /* fix content appearing behind */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     -webkit-transition-duration: 0.15s;
             transition-duration: 0.15s;
@@ -69,7 +69,7 @@
 
     border-left: 1px solid #343c40;
 
-    color: #fff;
+    color: #ffffff;
     font-size: 0.6rem;
     font-weight: 300;
     -webkit-transition-duration: 0.15s;
@@ -94,8 +94,8 @@
 }
 
 .menu-link:hover,
-.menu--assuntos .menu a.is-active{
-    color: #00c940
+.menu--assuntos .menu a.is-active {
+    color: #00c940;
 }
 
 .menu--assuntos {
@@ -128,7 +128,7 @@
 .menu--assuntos .menu a {
     padding: 0 0.4rem;
 
-    color: #fff;
+    color: #ffffff;
     font-size: 0.8rem;
     font-weight: 400;
     -webkit-transition-duration: 0.15s;
@@ -136,7 +136,7 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-.menu--assuntos .menu a:hover{
+.menu--assuntos .menu a:hover {
     color: #00c940;
 }
 
@@ -163,13 +163,15 @@
 
 @media (min-width: 880px) {
     .layout-container {
-        padding: 10rem 1.4rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
 
         -webkit-transition-duration: 0.15s;
                 transition-duration: 0.15s;
     }
     .header {
-        flex-wrap: wrap;
+            flex-wrap: wrap;
+
         padding: 0;
 
         -ms-flex-wrap: wrap;
@@ -197,7 +199,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
     }
-    .site-slogan__text{
+    .site-slogan__text {
         font-size: 0.7rem;
     }
     .block-system-branding-block {
@@ -237,8 +239,9 @@
 
         align-items: center;
 
-        background-color: #343c40;
         padding: 0.5rem;
+
+        background-color: #343c40;
 
         -webkit-box-align: center;
         -ms-flex-align: center;
