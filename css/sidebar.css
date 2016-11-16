@@ -47,8 +47,7 @@
     margin-bottom: 1rem;
 }
 #block-moedas {
-    margin-left: -0.7rem;
-    overflow-x: scroll;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 800px) {
