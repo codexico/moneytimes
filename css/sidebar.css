@@ -1,5 +1,5 @@
 .block-mailchimp-signup {
-    width: 260px;
+    width: 90%;
     margin: 1rem auto 2rem;
     padding: 1.1rem;
 
@@ -61,24 +61,7 @@
 @media (min-width: 1024px) {
     .layout-sidebar-second,
     .region-sidebar-second {
-        min-width: 300px; /* adsense */
+        width: 300px; /* adsense */
         min-height: 0.5vh;
-    }
-    .region-sidebar-second {
-        position: fixed;
-        top: 10rem;
-        right: 0;
-    }
-
-    .menu--fixed .region-sidebar-second {
-        top: 3rem;
-
-        -webkit-transition-duration: 0.3s;
-                transition-duration: 0.3s;
-    }
-
-    .region-sidebar-second .block-adsense,
-    .region-sidebar-second .adsense {
-        width: 16rem;
     }
 }

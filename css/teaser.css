@@ -13,6 +13,8 @@
     -ms-flex-wrap: wrap;
 }
 .node--view-mode-teaser.node--sticky {
+    padding-left: 0.2rem;
+
     background-color: #eeeeee;
 }
 .node--type-noticia.node--view-mode-teaser img {

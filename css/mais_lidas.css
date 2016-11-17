@@ -8,6 +8,9 @@
     font-size: 1.25rem;
     font-weight: bold;
 }
+#block-views-block-mais-lidas {
+    padding: 0 0.2rem;
+}
 .view-mais-lidas .views-row {
     margin-bottom: 1.15rem;
     padding-bottom: 0.85rem;
@@ -17,12 +20,6 @@
 .view-mais-lidas img {
     max-width: 100%;
     height: auto;
-}
-.view-mais-lidas .node__title--card {
-    margin-top: 0;
-}
-.view-mais-lidas .node__title--card {
-    margin-top: 0;
 }
 .view-mais-lidas .node__title--card {
     margin-top: 0;

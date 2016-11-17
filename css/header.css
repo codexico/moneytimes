@@ -163,8 +163,8 @@
 
 @media (min-width: 880px) {
     .layout-container {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
 
         -webkit-transition-duration: 0.15s;
                 transition-duration: 0.15s;
