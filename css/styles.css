@@ -10,6 +10,8 @@ main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+
+    padding: 1.5rem 1rem 0 1rem;
 }
 .region-content {
     width: 100%;
@@ -21,10 +23,6 @@ main {
     display: none;
 }
 
-.view-frontpage {
-    padding: 0 0.6rem;
-}
-
 .layout-sidebar-first {
     order: 3;
 
@@ -33,6 +31,10 @@ main {
 
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
+}
+.layout-sidebar-first .block-adsense,
+.layout-sidebar-second .block-adsense{
+    margin: 0 0 1rem 0;
 }
 @media (min-width: 1024px) {
     main {
@@ -43,7 +45,7 @@ main {
         -ms-flex-direction: row;
     }
     .region-content {
-        padding: 0;
+        padding: 0 2em;
     }
     .layout-sidebar-first {
         order: 0;
@@ -57,6 +59,13 @@ main {
         display: block;
 
         text-align: center;
+        font-size: 0px;
+    }
+    #block-managedad {
+        display: block;
+
+        text-align: center;
+
     }
     .main-content {
         display: -webkit-box;

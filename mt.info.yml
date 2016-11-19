@@ -6,3 +6,16 @@ base theme: classy
 
 libraries:
   - mt/base
+
+regions:
+  header: Header
+  primary_menu: Menu Principal
+  secondary_menu: Menu Secundário
+  highlighted: Destaque
+  help: Mensagens e Ajuda
+  content: Conteúdo Principal
+  other_content: Outros Conteúdos
+  sidebar_first: Primeira Barra Lateral
+  sidebar_second: Segunda Barra Lateral
+  footer: Footer
+  breadcrumb: Breadcrumb
