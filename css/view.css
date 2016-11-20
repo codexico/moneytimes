@@ -1,0 +1,67 @@
+.block-view {
+    margin-bottom: 2.15rem;
+}
+.block-views h2 {
+    margin-bottom: 1.4rem;
+
+    color: #272c2e;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* box
+   ========================================================================== */
+.view-box .views-row {
+    position: relative;
+
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    border-bottom: 1px solid #eeeeee;
+}
+.view-box .views-row:last-child {
+    margin-bottom: 0;
+
+    border-bottom: 0;
+}
+.view-box img {
+    max-width: 100%;
+    height: auto;
+}
+.view-box .node__title--card {
+    margin-top: 0;
+}
+
+.view-box .views-field {
+    margin-bottom: 1.4rem;
+}
+.view-box .views-field-title a {
+    color: #222222;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* counter
+   ========================================================================== */
+.view-counter {
+    counter-reset: number 0;
+}
+.view-counter .views-row:before {
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+
+    height: 100%;
+
+    color: #00c940;
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1;
+    content: counter(number);
+    counter-increment: number;
+}
+.view-counter .views-row {
+    padding-left: 2rem;
+    min-height: 3rem;
+}
