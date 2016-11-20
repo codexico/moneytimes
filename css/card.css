@@ -6,8 +6,6 @@
         flex-wrap: wrap;
     align-items: flex-start;
 
-    padding: 0 1rem;
-
     -ms-flex-wrap: wrap;
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -24,6 +22,10 @@
     margin-bottom: 1rem;
 
     -ms-flex-preferred-size: 32%;
+}
+.view-related-by-tags .node--type-noticia img {
+    width: 100%;
+    height: auto;
 }
 
 .node--view-mode-card {
