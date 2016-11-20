@@ -67,3 +67,8 @@
         min-height: 0.5vh;
     }
 }
+
+.banner-popup {
+    margin-bottom: 1rem;
+    text-align: center;
+}

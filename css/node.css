@@ -5,13 +5,19 @@
 /* node title
    ========================================================================== */
 .node__title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     width: 100%;
 }
 .node__title-link {
     color: #222222;
     text-decoration: none;
 }
+@media (min-width: 640px) {
+    .node__title {
+        font-size: 1.3rem;
+    }
+}
+
 @media (min-width: 1280px) {
     .node__title {
         flex: 1;
@@ -95,11 +101,3 @@
     }
 }
 
-/* ==========================================================================
-   Smaller screens
-   ========================================================================== */
-@media (max-width: 320px) {
-    .node__title {
-        font-size: 1.1rem;
-    }
-}
