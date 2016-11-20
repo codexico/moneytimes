@@ -83,6 +83,10 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
+  <div class="node--teaser__teaser-details">
+    <span class="teaser-details__date">{{ date }}</span>
+  </div>
+
   {{ title_prefix }}
   {% if not page %}
     <h2 class="node__title" {{ title_attributes }}>
@@ -93,15 +97,6 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}
-  </div>
-
-  <div class="node--teaser__teaser-details">
-    <span class="teaser-details__date">{{ date }}</span>
-    {% if display_submitted %}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        <span class="teaser-details__author">{{ author_name }}</span>
-      </div>
-    {% endif %}
   </div>
 
 
