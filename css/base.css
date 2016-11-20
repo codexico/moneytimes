@@ -6,8 +6,9 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Open Sans", "Lucida Grande", Verdana, sans-serif;
     background: #f4f4f4;
+
+    font-family: "Open Sans", "Lucida Grande", Verdana, sans-serif;
     counter-reset: number;
 }
 a > img {

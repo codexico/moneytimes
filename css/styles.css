@@ -6,16 +6,16 @@ main {
         flex-direction: column;
 
     width: 100%;
+    padding: 1.5rem 1rem 0 1rem;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-
-    padding: 1.5rem 1rem 0 1rem;
 }
 .region-content {
-    width: 100%;
     position: relative;
+
+    width: 100%;
 }
 
 #block-adsensecabecalho,
@@ -34,7 +34,7 @@ main {
     -ms-flex-order: 3;
 }
 .layout-sidebar-first .block-adsense,
-.layout-sidebar-second .block-adsense{
+.layout-sidebar-second .block-adsense {
     margin: 0 0 1rem 0;
 }
 @media (min-width: 1024px) {
@@ -59,14 +59,13 @@ main {
     .block-adsense-managed-ad-block {
         display: block;
 
+        font-size: 0;
         text-align: center;
-        font-size: 0px;
     }
     #block-managedad {
         display: block;
 
         text-align: center;
-
     }
     .main-content {
         display: -webkit-box;

@@ -1,11 +1,11 @@
 .block-mailchimp-signup {
     width: 100%;
     margin: 0 auto 1rem;
-
     padding: 1.25rem;
-    background: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
+
     border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
 
     font-size: 0.9rem;
     -webkit-transition-duration: 0.3s;
