@@ -23,6 +23,9 @@
 
     -ms-flex-preferred-size: 33%;
 }
+.view-related-by-tags .views-row h2 {
+    font-size: 1rem;
+}
 .view-related-by-tags .node--type-noticia img {
     width: 100%;
     height: auto;
