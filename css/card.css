@@ -17,11 +17,11 @@
     display: -ms-flexbox;
     display: flex;
 
-    flex-basis: 32%;
+    flex-basis: 33%;
 
     margin-bottom: 1rem;
 
-    -ms-flex-preferred-size: 32%;
+    -ms-flex-preferred-size: 33%;
 }
 .view-related-by-tags .node--type-noticia img {
     width: 100%;
