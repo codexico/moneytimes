@@ -65,6 +65,7 @@
 }
 .block-addtoany {
     position: relative;
+    z-index:1;
 }
 .block-addtoany .addtoany_list > a {
     padding: 0 1px;
