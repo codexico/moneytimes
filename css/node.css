@@ -5,18 +5,24 @@
 /* node title
    ========================================================================== */
 .node__title {
-        flex: 1;
-
-    margin: 0 0 1rem 0;
-
     font-size: 1.3rem;
-
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
+    width: 100%;
 }
 .node__title-link {
     color: #222222;
     text-decoration: none;
+}
+@media (min-width: 1280px) {
+    .node__title {
+        flex: 1;
+
+        margin: 0 0 1rem 0;
+
+        font-size: 1.3rem;
+
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+    }
 }
 /* node meta
    ========================================================================== */
@@ -31,17 +37,6 @@
 
 /* node content
    ========================================================================== */
-.node__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-        flex-wrap: wrap;
-
-    margin: 0 0 1rem 0;
-
-    -ms-flex-wrap: wrap;
-}
 .node--view-mode-full .field--type-text-long,
 .node--view-mode-full .field--type-text-with-summary {
     min-width: 100%;
@@ -80,9 +75,17 @@
 /* ==========================================================================
    Bigger screens
    ========================================================================== */
-@media (min-width: 1130px) {
+@media (min-width: 1280px) {
     .node__content {
-        margin-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        flex-wrap: wrap;
+
+        margin: 0 0 1rem 0;
+
+        -ms-flex-wrap: wrap;
     }
     .node__title {
             flex: 1 1 100%;
