@@ -62,11 +62,14 @@
     border-radius: 2px;
     margin: 0 1rem 1rem;
 }
+.block-addtoany {
+    position: relative;
+}
 @media (min-width: 640px) {
     .addtoany_list {
         position: absolute;
         top: 0;
-        right: 1rem;
+        right: 0;
     }
 }
 /* ==========================================================================
