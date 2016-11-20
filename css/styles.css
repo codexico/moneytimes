@@ -37,6 +37,16 @@ main {
 .layout-sidebar-second .block-adsense {
     margin: 0 0 1rem 0;
 }
+
+.region-other-content {
+    margin: 0 1rem;
+}
+
+.banner-noticias {
+    text-align: center;
+}
+
+
 @media (min-width: 1024px) {
     main {
             flex-direction: row;
