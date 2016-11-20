@@ -65,6 +65,9 @@
 .block-addtoany {
     position: relative;
 }
+.block-addtoany .addtoany_list > a {
+     padding: 0 1px;
+ }
 @media (min-width: 640px) {
     .addtoany_list {
         position: absolute;
