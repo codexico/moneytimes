@@ -72,7 +72,7 @@
 .block-addtoany .addtoany_list > a {
     padding: 0 1px;
 }
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
     .main-content_noticia {
         margin: 0 1rem 1rem;
         padding: 0;
