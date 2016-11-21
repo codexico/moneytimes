@@ -15,6 +15,7 @@ base:
       css/blocks.css: {}
       css/footer.css: {}
       css/view.css: {}
+      css/page.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}
