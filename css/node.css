@@ -69,6 +69,10 @@ a.node__title-link:hover {
 .node--type-noticia p a{
     color: #00c940;
 }
+.node--type-noticia iframe {
+    max-width: 100%;
+    height: auto;
+}
 .main-content_noticia {
     padding: 0.2rem 0.7rem;
 
