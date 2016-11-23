@@ -2,11 +2,21 @@
     margin-bottom: 2.15rem;
 }
 .block-views h2 {
-    margin-bottom: 1.4rem;
+    margin: 0 0 1.4rem 0;
 
     color: #272c2e;
     font-size: 1.25rem;
     font-weight: bold;
+}
+#block-cotacoesbussoladoinvestidor h2 {
+    margin: 0;
+
+    color: #272c2e;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#block-views-block-ultimas-noticias-block-1{
+    margin-top: 2rem;
 }
 
 /* box
@@ -31,15 +41,14 @@
 .view-box .node__title--card {
     margin-top: 0;
 }
-
-.view-box .views-field {
-    margin-bottom: 1.4rem;
-}
 .view-box .views-field-title a {
     color: #222222;
     font-size: 0.8rem;
     font-weight: normal;
     text-decoration: none;
+}
+.view-box .views-field-title a:hover{
+    text-decoration: underline;
 }
 
 /* counter
@@ -64,4 +73,25 @@
 .view-counter .views-row {
     min-height: 3rem;
     padding-left: 2rem;
+}
+
+/* Front page list
+   ========================================================================== */
+
+.view-frontpage .view-content .views-row:nth-child(1) {
+    margin-top: -2em;
+}
+.view-frontpage .view-content .views-row:nth-child(2) .node--view-mode-teaser{
+    margin-top: 4rem;
+}
+.view-frontpage .view-content .views-row:nth-child(2) .node--view-mode-teaser:before {
+    content: 'Últimas Notícias';
+    display: block;
+    position: absolute;
+    top: -46px;
+    margin: 0 0 1.4rem 0;
+    color: #222;
+    font-size: 1.25rem;
+    left: 0;
+    font-weight: bold;
 }

@@ -1,7 +1,8 @@
 #block-views-block-mais-lidas,
 #block-views-block-asdf-tag-noticia-block-1,
 #block-views-block-ultimas-petrobras-block-1,
-#block-views-block-ultimas-comprar-ou-vender-block-1 {
+#block-views-block-ultimas-comprar-ou-vender-block-1,
+#block-cotacoesbussoladoinvestidor {
     margin: 0 0 1rem 0;
     padding: 1.25rem;
 
@@ -13,4 +14,16 @@
 #block-views-block-ultimas-petrobras-block-1,
 #block-views-block-ultimas-comprar-ou-vender-block-1 h2 {
     margin-top: 0;
+}
+
+#block-cotacoesbussoladoinvestidor iframe{
+    max-width: 257px;
+    margin-top: -10px;
+}
+#block-cotacoesbussoladoinvestidor p{
+    display: none;
+}
+
+#block-cotacoesbussoladoinvestidor .field__item{
+	overflow:hidden;
 }
