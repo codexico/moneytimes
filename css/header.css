@@ -10,12 +10,6 @@
     right: 0;
     left: 0;
 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    align-items: center;
-
     width: 100%;
     margin: 0;
     padding: 0.5rem;
@@ -26,9 +20,6 @@
 
     -webkit-transition-duration: 0.15s;
             transition-duration: 0.15s;
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
 }
 .region-primary-menu {
     display: -webkit-box;
