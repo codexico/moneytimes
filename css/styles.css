@@ -31,6 +31,7 @@ main {
     order: 3;
 
     width: 300px; /* investing.com */
+    min-width: 300px; /* IE */
     margin: 0 auto;
 
     -webkit-box-ordinal-group: 4;
