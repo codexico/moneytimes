@@ -23,6 +23,8 @@
 }
 /* arrow left triangle */
 .field--name-field-tags .field__item:before {
+    display: block; /* IE */
+
     width: 0;
     height: 0;
 
@@ -34,6 +36,8 @@
 }
 /* hole */
 .field--name-field-tags .field__item a:before {
+    display: block; /* IE */
+
     align-self: center;
 
     width: 4px;
