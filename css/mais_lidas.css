@@ -63,6 +63,6 @@
     font-weight: normal;
     text-decoration: none;
 }
-.view-box .views-field-title a:hover{
+.view-box .views-field-title a:hover {
     text-decoration: underline !important;
 }

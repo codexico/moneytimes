@@ -71,7 +71,7 @@
     color: #444444;
     font-size: 0.8rem;
 }
-.node--type-noticia.node--view-mode-teaser .node__title a:hover{
+.node--type-noticia.node--view-mode-teaser .node__title a:hover {
     text-decoration: underline;
 }
 @media (min-width: 1280px) {

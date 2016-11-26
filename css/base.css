@@ -21,7 +21,8 @@ h1 {
 }
 @media (min-width: 1130px) {
     h1 {
-        font-size: 2em;
         margin: 1em 0;
+
+        font-size: 2em;
     }
 }

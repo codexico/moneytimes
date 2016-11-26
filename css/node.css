@@ -37,13 +37,14 @@ a.node__title-link:hover {
 /* node meta
    ========================================================================== */
 
-.node__meta{
+.node__meta {
     margin: 0 0 1em 0;
 }
 .node__submitted {
+    margin-top: 1em;
+
     color: #444444;
     font-size: 0.8rem;
-    margin-top: 1em;
 }
 .node__submitted .field--type-created {
     color: #888888;
@@ -66,7 +67,7 @@ a.node__title-link:hover {
 .node--type-noticia img {
     margin: 1em 0;
 }
-.node--type-noticia p a{
+.node--type-noticia p a {
     color: #00c940;
 }
 .node--type-noticia iframe {

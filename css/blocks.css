@@ -1,7 +1,7 @@
 #block-views-block-mais-lidas,
 #block-views-block-asdf-tag-noticia-block-1,
 #block-views-block-ultimas-petrobras-block-1,
-#block-views-block-ultimas-comprar-ou-vender-block-1{
+#block-views-block-ultimas-comprar-ou-vender-block-1 {
     margin: 0 0 1rem 0;
     padding: 1.25rem;
 
@@ -15,7 +15,7 @@
     margin-top: 0;
 }
 
-#block-cotacoesbovespa iframe{
+#block-cotacoesbovespa iframe {
     max-width: 257px;
     margin-top: -10px;
 }
@@ -26,12 +26,12 @@
     font-size: 1.25rem;
     font-weight: bold;
 }
-#block-cotacoesbovespa p{
+#block-cotacoesbovespa p {
     display: none;
 }
 
-#block-cotacoesbovespa .field__item{
-	overflow:hidden;
+#block-cotacoesbovespa .field__item {
+    overflow: hidden;
 }
 #block-cotacoesbovespa {
     margin: 0 0 1rem 0;
