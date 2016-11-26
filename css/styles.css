@@ -17,6 +17,9 @@ main {
 
     width: 100%;
 }
+.layout-content {
+    width: 100%;
+}
 #block-bannernoticias,
 #block-adsensecabecalho,
 .adsense_cabecalho,
