@@ -14,11 +14,6 @@
 #block-views-block-ultimas-comprar-ou-vender-block-1 h2 {
     margin-top: 0;
 }
-
-#block-cotacoesbovespa iframe {
-    max-width: 257px;
-    margin-top: -10px;
-}
 #block-cotacoesbovespa h2 {
     margin: 0;
 
@@ -27,17 +22,14 @@
     font-weight: bold;
 }
 #block-cotacoesbovespa p {
-    display: none;
+    margin: 0;
+    padding: 0
 }
-
 #block-cotacoesbovespa .field__item {
     overflow: hidden;
 }
 #block-cotacoesbovespa {
     margin: 0 0 1rem 0;
-    padding: 1.25rem;
-
-    border-radius: 2px;
     background: #ffffff;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
+    padding: 0.3rem 0 0.5rem;
 }
