@@ -36,7 +36,9 @@
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
-    <css-placeholder token="{{ placeholder_token|raw }}">
+      <link rel='alternate' type='application/rss+xml' title='RSS' href='http://www.moneytimes.com.br/rss.xml'>
+
+      <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <script>
