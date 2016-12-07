@@ -23,13 +23,14 @@
 }
 #block-cotacoesbovespa p {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 #block-cotacoesbovespa .field__item {
     overflow: hidden;
 }
 #block-cotacoesbovespa {
     margin: 0 0 1rem 0;
-    background: #ffffff;
     padding: 0.3rem 0 0.5rem;
+
+    background: #ffffff;
 }

@@ -68,11 +68,13 @@ a.node__title-link:hover {
     margin: 1em 0;
 }
 .node--type-noticia p a {
-    color: #00c940;
-    word-wrap: break-word;
-    max-width: 500px;
     display: inline-block;
+
+    max-width: 500px;
+
+    color: #00c940;
     vertical-align: top;
+    word-wrap: break-word;
 }
 @media (max-width: 1024px) {
     .node--type-noticia iframe {
