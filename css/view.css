@@ -8,6 +8,13 @@
     font-size: 1.25rem;
     font-weight: bold;
 }
+.block-views h2 a {
+    color: #272c2e;
+    text-decoration: none;
+}
+.block-views h2 a:hover {
+    text-decoration: underline;
+}
 #block-views-block-ultimas-noticias-block-1 {
     margin-top: 2rem;
 }
