@@ -144,7 +144,6 @@
     font-size: 0.8rem;
 }
 .social-icon {
-    width: 1rem;
     margin: 0.1rem 0.2rem;
 
     color: #e6e6e6;
@@ -295,6 +294,8 @@
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
+
+        align-items: flex-end;
     }
     .social-icon {
         display: -webkit-inline-box;
