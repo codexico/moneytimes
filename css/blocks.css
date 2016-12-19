@@ -1,6 +1,7 @@
 #block-views-block-mais-lidas,
 #block-views-block-asdf-tag-noticia-block-1,
 #block-views-block-ultimas-petrobras-block-1,
+#block-views-block-ultimas-perspectivas-2017-block-1,
 #block-views-block-ultimas-comprar-ou-vender-block-1 {
     margin: 0 0 1rem 0;
     padding: 1.25rem;
@@ -11,6 +12,7 @@
 }
 #block-views-block-mais-lidas h2,
 #block-views-block-ultimas-petrobras-block-1,
+#block-views-block-ultimas-perspectivas-2017-block-1,
 #block-views-block-ultimas-comprar-ou-vender-block-1 h2 {
     margin-top: 0;
 }
