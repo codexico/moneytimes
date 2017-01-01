@@ -1,4 +1,5 @@
-.node--type-noticia {
+.node--type-noticia,
+.node--type-patrocinado {
     position: relative;
 }
 
@@ -61,13 +62,16 @@ a.node__title-link:hover {
 .node--view-mode-full .field--type-text-with-summary img {
     max-width: 100%;
 }
-.node--type-noticia p {
+.node--type-noticia p,
+.node--type-patrocinado p {
     line-height: 1.5;
 }
-.node--type-noticia img {
+.node--type-noticia img,
+.node--type-patrocinado img {
     margin: 1em 0;
 }
-.node--type-noticia p a {
+.node--type-noticia p a,
+.node--type-patrocinado p a {
     display: inline-block;
 
     max-width: 500px;
@@ -77,38 +81,36 @@ a.node__title-link:hover {
     word-wrap: break-word;
 }
 @media (max-width: 1024px) {
-    .node--type-noticia iframe {
+    .node--type-noticia iframe,
+    .node--type-patrocinado iframe {
         max-width: 100%;
         height: auto;
     }
 }
-.main-content_noticia {
+.main-content_noticia,
+.main-content_patrocinado {
     padding: 0.2rem 0.7rem;
 
     border-radius: 2px;
     background: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
 }
-.block-addtoany {
-    position: relative;
-    z-index: 1;
-}
-.block-addtoany .addtoany_list > a {
-    padding: 0 1px;
-}
 @media (min-width: 1024px) {
-    .main-content_noticia {
+    .main-content_noticia,
+    .main-content_patrocinado {
         margin: 0 1rem 1rem;
         padding: 0;
     }
 }
+
 @media (min-width: 1280px) {
-    .addtoany_list {
-        position: absolute;
+    .main-content_noticia .addtoany_list,
+    .main-content_patrocinado .addtoany_list {
         top: -4px;
-        right: 0;
     }
 }
+
+
 /* ==========================================================================
    Bigger screens
    ========================================================================== */
@@ -130,7 +132,8 @@ a.node__title-link:hover {
         -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
     }
-    .main-content_noticia {
+    .main-content_noticia,
+    .main-content_patrocinado {
         margin: 0 1rem 1rem;
     }
 }
