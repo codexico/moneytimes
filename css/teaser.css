@@ -18,7 +18,10 @@
     -ms-flex-wrap: wrap;
 }
 .node--view-mode-teaser.node--sticky {
-    border-top: 3px solid #00c940;
+    border-color: #00c940;
+}
+.node--view-mode-teaser.node--type-patrocinado {
+    border-color: #343c40;
 }
 .node--type-noticia.node--view-mode-teaser img,
 .node--type-patrocinado.node--view-mode-teaser img {

@@ -51,6 +51,19 @@ a.node__title-link:hover {
     color: #888888;
 }
 
+.content_type_info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.65rem;
+    padding: 0 0.2rem 0.1rem;
+    margin: 0.1rem;
+}
+.content_type_info--patrocinado {
+    background-color: #343c40;
+    color: #ffffff;
+    border-radius: 1px;
+}
 
 /* node content
    ========================================================================== */
@@ -89,6 +102,8 @@ a.node__title-link:hover {
 }
 .main-content_noticia,
 .main-content_patrocinado {
+    position: relative;
+
     padding: 0.2rem 0.7rem;
 
     border-radius: 2px;
@@ -137,3 +152,5 @@ a.node__title-link:hover {
         margin: 0 1rem 1rem;
     }
 }
+
+
