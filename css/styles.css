@@ -64,11 +64,14 @@ main {
     .region-content {
         padding: 0 1em;
     }
+    .layout-content {
+        order: 1;
+    }
     .layout-sidebar-first {
         order: 0;
-
-        -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
+    }
+    .layout-sidebar-second {
+        order: 2;
     }
     #block-adsensecabecalho,
     .adsense_cabecalho,
@@ -99,12 +102,6 @@ main {
     }
     .region-content {
         padding: 0 2em;
-    }
-    .layout-sidebar-first {
-        order: 0;
-
-        -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
     }
     #block-bannernoticias,
     #block-adsensecabecalho,

@@ -1,13 +1,16 @@
 .pager {
     padding-left: 0;
+
     text-align: center;
 }
 
 .pager .pager__item .button {
     margin: 0;
     padding: 0.5rem 1rem;
+
     border: 0;
     background: #00c940;
+
     color: #ffffff;
     font-size: 0.9rem;
     font-weight: bold;
