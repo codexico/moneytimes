@@ -40,4 +40,56 @@ window.addEventListener('scroll', function(e) {
         return false;
     });
 
+    function changeAddToAnyFbShareButton() {
+        var elements = document.querySelectorAll('.a2a_button_facebook');
+
+        var item = null;
+
+        for (var i = 0; i < elements.length; i++) {
+            item = elements[i];
+            item.classList.remove('a2a_button_facebook');
+            item.classList.add('a2a_button_facebook_like');
+
+            item.dataset.layout = "button_count";
+            item.dataset.action = "like";
+            item.dataset.size = "small";
+            // item.dataset.showFaces = "false";
+            item.dataset.share = "true";
+            item.dataset.width = "142";
+        }
+    }
+
+    function changeFbShareButtonOnLoadMore() {
+        var elements = document.querySelectorAll('.a2a_button_facebook');
+
+        var item = null;
+        var article = null;
+        var href = null;
+
+        for (var i = 0; i < elements.length; i++) {
+            item = elements[i];
+            item.classList.remove('a2a_button_facebook');
+            item.classList.add('a2a_button_facebook_loaded');
+            article = item.parentNode.parentNode.parentNode;
+            href = article.querySelector('.node__title-link').href;
+
+            item.innerHTML = '<div class="fb-like" data-href="' + href + '" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>';
+
+            FB.XFBML.parse(item);
+        }
+    }
+
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if (w > 700) { // tablet or desktop
+        changeAddToAnyFbShareButton();
+
+        Drupal.behaviors.FBbuttons = {
+            attach: function (context, settings) {
+                changeFbShareButtonOnLoadMore();
+            }
+        }
+    }
+
+
 })();
