@@ -95,12 +95,6 @@
     <main role="main">
         <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-        {% if page.sidebar_first %}
-            <aside class="layout-sidebar-first" role="complementary">
-                {{ page.sidebar_first }}
-            </aside>
-        {% endif %}
-
         <div class="layout-content">
             <div class="main-content main-content_noticia main-content_patrocinado">
                 <span class="content_type_info content_type_info--patrocinado">Conteúdo patrocinado</span>
@@ -110,6 +104,12 @@
                 {{ page.other_content }}
             </div> <!-- .other-content -->
         </div>{# /.layout-content #}
+
+        {% if page.sidebar_first %}
+            <aside class="layout-sidebar-first" role="complementary">
+                {{ page.sidebar_first }}
+            </aside>
+        {% endif %}
 
         {% if page.sidebar_second %}
             <aside class="layout-sidebar-second" role="complementary">
