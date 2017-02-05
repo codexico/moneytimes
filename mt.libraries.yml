@@ -23,3 +23,4 @@ base:
   js:
     js/app.js: {}
     js/investing.js: {}
+    js/giro.js: {}
