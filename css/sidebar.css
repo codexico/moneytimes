@@ -34,6 +34,9 @@
 .mailchimp-newsletter-mergefields input {
     width: 100%;
     height: 2rem;
+
+    padding-left: 0.4rem;
+    padding-right: 0.2rem;
 }
 .block-mailchimp-signup .form-item {
     margin: 0;
@@ -64,7 +67,7 @@
     text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) {\
     .layout-sidebar-second,
     .region-sidebar-second {
         width: 300px; /* adsense */
@@ -76,4 +79,40 @@
     margin-bottom: 1rem;
 
     text-align: center;
+}
+
+.js-insert-giro .block-mailchimp-signup {
+    padding-bottom: 0.7rem;
+}
+.js-insert-giro .block-mailchimp-signup h2 {
+    display: none;
+}
+.js-insert-giro .block-mailchimp-signup .block-mailchimp-signup-legend {
+    font-size: 0.85rem;
+}
+.js-insert-giro .block-mailchimp-signup form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.js-insert-giro .block-mailchimp-signup .mailchimp-newsletter-mergefields {
+    display: flex;
+}
+.js-insert-giro .block-mailchimp-signup .form-item {
+    width: 100%;
+}
+.js-insert-giro .block-mailchimp-signup .form-submit {
+    height: 2rem;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .js-insert-giro .block-mailchimp-signup .mailchimp-newsletter-mergefields {
+        width: 80%;
+    }
+    .js-insert-giro .block-mailchimp-signup .form-submit {
+        width: 20%;
+        padding: 0;
+    }
 }
