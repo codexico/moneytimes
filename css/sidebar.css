@@ -67,7 +67,7 @@
     text-align: center;
 }
 
-@media (min-width: 1024px) {\
+@media (min-width: 1024px) {
     .layout-sidebar-second,
     .region-sidebar-second {
         width: 300px; /* adsense */
