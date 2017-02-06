@@ -22,5 +22,4 @@ base:
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css: {}
   js:
     js/app.js: {}
-    js/investing.js: {}
     js/giro.js: {}
