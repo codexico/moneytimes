@@ -63,21 +63,33 @@
     font-size: 0.85rem;
 }
 .js-insert-giro .block-mailchimp-signup form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
 }
 .js-insert-giro .block-mailchimp-signup .mailchimp-newsletter-mergefields {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .js-insert-giro .block-mailchimp-signup .form-item {
     width: 100%;
 }
 .js-insert-giro .block-mailchimp-signup .form-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    align-self: center;
-    justify-content: center;
+    -ms-flex-item-align: center;
+
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     height: 2rem;
 }
@@ -106,7 +118,9 @@
     background-color: #343c40;
     box-shadow: 0 -2px 2px 0 #00c940;
 
-    transition-duration: 1.2s;
+    -webkit-transition-duration: 1.2s;
+
+            transition-duration: 1.2s;
     text-align: center;
 }
 
