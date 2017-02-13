@@ -103,58 +103,55 @@
 /* stiky
    ========================================================================== */
 .node--view-mode-teaser.node--sticky {
-    border-color: #00c940;
     padding: 0;
+
+    border-color: #00c940;
 }
-.node--view-mode-teaser.node--sticky:hover .field--name-title{
+.node--view-mode-teaser.node--sticky:hover .field--name-title {
     text-decoration: underline;
 }
-.node--view-mode-teaser.node--sticky .node--teaser__teaser-details{
+.node--view-mode-teaser.node--sticky .node--teaser__teaser-details {
     display: none;
 }
-.node--view-mode-teaser.node--sticky .node__title{
+.node--view-mode-teaser.node--sticky .node__title {
     margin: 0;
 }
-.node--view-mode-teaser.node--sticky .node__title-link{
+.node--view-mode-teaser.node--sticky .node__title-link {
     position: absolute;
+    bottom: 0;
+
     width: 100%;
     height: 100%;
-    bottom: 0;
     /*background: rgba(0,0,0,0.5);*/
+
     background: linear-gradient(to bottom,transparent 50%,rgba(0,0,0,0.9) 100%);
-    color: #fff;
+
+    color: #ffffff;
 }
-.node--view-mode-teaser.node--sticky .node__title-link .field--name-title{
-    display: block;
+.node--view-mode-teaser.node--sticky .node__title-link .field--name-title {
     position: absolute;
+    bottom: 0;
+
+    display: block;
+
     width: 100%;
     padding: 15.15rem 1.25rem 1.6rem 1.25rem;
-    bottom: 0;
 }
-.node--view-mode-teaser.node--sticky .node__content{
+.node--view-mode-teaser.node--sticky .node__content {
     width: 100%;
     margin: 0;
 }
-.node--view-mode-teaser.node--sticky .field--name-field-image{
+.node--view-mode-teaser.node--sticky .field--name-field-image {
     width: 100%;
 }
-.node--view-mode-teaser.node--sticky .field--name-field-image img{
+.node--view-mode-teaser.node--sticky .field--name-field-image img {
     display: block;
+
     width: 100%;
 }
-.node--view-mode-teaser.node--sticky .field--name-field-resumo{
+.node--view-mode-teaser.node--sticky .field--name-field-resumo {
     display: none;
 }
-.node--view-mode-teaser.node--sticky .addtoany_list{
+.node--view-mode-teaser.node--sticky .addtoany_list {
     display: none !important;
 }
-
-
-
-
-
-
-
-
-
-

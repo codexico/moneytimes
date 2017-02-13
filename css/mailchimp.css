@@ -1,0 +1,124 @@
+.block-mailchimp-signup {
+    width: 100%;
+    margin: 0 auto 1rem;
+    padding: 1.25rem;
+
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
+
+    font-size: 0.9rem;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+.block-mailchimp-signup:after {
+    display: block;
+    clear: both;
+
+    content: "";
+}
+.block-mailchimp-signup h2 {
+    margin-top: 0;
+    margin-bottom: 1.4rem;
+
+    color: #272c2e;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.mailchimp-newsletter-mergefields {
+    margin: 0.5rem 0;
+}
+.mailchimp-newsletter-mergefields label {
+    display: none;
+}
+.mailchimp-newsletter-mergefields input {
+    width: 100%;
+    height: 2rem;
+    padding-right: 0.2rem;
+    padding-left: 0.4rem;
+
+    color: #000000;
+}
+.block-mailchimp-signup .form-item {
+    margin: 0;
+}
+.block-mailchimp-signup .form-submit {
+    margin: 0;
+    padding: 0.5rem 1rem;
+
+    border: 0;
+    background: #00c940;
+
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.js-insert-giro .block-mailchimp-signup {
+    padding-bottom: 0.7rem;
+}
+.js-insert-giro .block-mailchimp-signup h2 {
+    display: none;
+}
+.js-insert-giro .block-mailchimp-signup .block-mailchimp-signup-legend {
+    font-size: 0.85rem;
+}
+.js-insert-giro .block-mailchimp-signup form {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+.js-insert-giro .block-mailchimp-signup .mailchimp-newsletter-mergefields {
+    display: flex;
+}
+.js-insert-giro .block-mailchimp-signup .form-item {
+    width: 100%;
+}
+.js-insert-giro .block-mailchimp-signup .form-submit {
+    display: flex;
+
+    align-self: center;
+    justify-content: center;
+
+    height: 2rem;
+}
+
+@media (min-width: 768px) {
+    .js-insert-giro .block-mailchimp-signup .mailchimp-newsletter-mergefields {
+        width: 80%;
+    }
+    .js-insert-giro .block-mailchimp-signup .form-submit {
+        width: 20%;
+        padding: 0;
+    }
+}
+
+#block-mailchimpsubscriptionformgiromoneytimes {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 0;
+    margin: 0;
+    padding: 0;
+
+    background-color: #343c40;
+    box-shadow: 0 -2px 2px 0 #00c940;
+
+    transition-duration: 1.2s;
+    text-align: center;
+}
+
+#block-mailchimpsubscriptionformgiromoneytimes.show {
+    height: 6rem;
+    padding: 0.8rem;
+}
+#block-mailchimpsubscriptionformgiromoneytimes h2 {
+    margin: 0;
+
+    color: white;
+}
+#block-mailchimpsubscriptionformgiromoneytimes .mailchimp-newsletter-mergefields {
+    display: inline-block;
+}

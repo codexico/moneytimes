@@ -36,6 +36,74 @@
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
+
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "cac43998-f5bd-46ff-9b64-c0550b2eeef6",
+            autoRegister: false,
+            promptOptions: {
+              /* These prompt options values configure both the HTTP prompt and the HTTP popup. */
+              /* actionMessage limited to 90 characters */
+                actionMessage: "Receba notificações das principais notícias escolhidas pelo editor",
+              /* acceptButtonText limited to 15 characters */
+                acceptButtonText: "PERMITIR",
+              /* cancelButtonText limited to 15 characters */
+                cancelButtonText: "Não, obrigado"
+            },
+            persistNotification: false,
+            welcomeNotification: {
+                "title": "Obrigado por se cadastrar!",
+                "message": "Saiba mais sobre o Money Times",
+                "url": "https://www.moneytimes.com.br/sobre"
+            },
+            notifyButton: {
+                enable: false, /* Required to use the notify button */
+                prenotify: false, /* Show an icon with 1 unread message for first-time site visitors */
+                showCredit: false, /* Hide the OneSignal logo */
+                text: {
+                    'tip.state.unsubscribed': 'Receba as notícias mais importantes!',
+                    'tip.state.subscribed': "O cadastro já foi efetuado",
+                    'tip.state.blocked': "As notificações estão bloqueadas",
+                    'message.prenotify': 'Clique para receber notificações',
+                    'message.action.subscribed': "Obrigado pelo cadastro!",
+                    'message.action.resubscribed': "O cadastro já foi efetuado",
+                    'message.action.unsubscribed': "VocÊ não receberá mais notificações",
+                    'dialog.main.title': 'Configure notificações para o site',
+                    'dialog.main.button.subscribe': 'CADASTRE-SE',
+                    'dialog.main.button.unsubscribe': 'CANCELAR CADASTRO',
+                    'dialog.blocked.title': 'Desbloquear notificações',
+                    'dialog.blocked.message': "Siga estes passos para permitir notificações:"
+                },
+                colors: { // Customize the colors of the main button and dialog popup button
+                    'circle.background': '#343c40',
+                    'circle.foreground': '#00c940',
+                    'badge.background': '#343c40',
+                    'badge.foreground': 'white',
+                    'badge.bordercolor': 'white',
+                    'pulse.color': 'white',
+                    'dialog.button.background.hovering': 'rgb(77, 101, 113)',
+                    'dialog.button.background.active': 'rgb(70, 92, 103)',
+                    'dialog.button.background': '#343c40',
+                    'dialog.button.foreground': 'white'
+                },
+            }
+        }]);
+        window.setTimeout(function () {
+            OneSignal.push(function() {
+                OneSignal.showHttpPrompt();
+            });
+        }, 5000);
+        window.setTimeout(function () {
+            var oneSignalPopOver = document.getElementById('onesignal-popover-container');
+            if (oneSignalPopOver) {
+                oneSignalPopOver.parentNode.removeChild(oneSignalPopOver);
+            }
+        }, 15000);
+    </script>
+
       <link rel='alternate' type='application/rss+xml' title='RSS' href='http://www.moneytimes.com.br/rss.xml'>
 
       <css-placeholder token="{{ placeholder_token|raw }}">
@@ -47,8 +115,17 @@
           enable_page_level_ads: true
         });
       </script>
+
   </head>
   <body{{ attributes.addClass(body_classes) }}>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
     {#
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.

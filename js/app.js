@@ -1,9 +1,15 @@
 window.addEventListener('scroll', function(e) {
-  if (window.scrollY > 100) {
-      document.body.classList.add('menu--fixed');
-  } else {
-      document.body.classList.remove('menu--fixed');
-  }
+    if (window.scrollY > 100) {
+        document.body.classList.add('menu--fixed');
+        if (window.scrollY > 600) {
+            var oneSignalPopOver = document.getElementById('onesignal-popover-container');
+            if (oneSignalPopOver) {
+                oneSignalPopOver.parentNode.removeChild(oneSignalPopOver);
+            }
+        }
+    } else {
+        document.body.classList.remove('menu--fixed');
+    }
 });
 
 
@@ -88,8 +94,7 @@ window.addEventListener('scroll', function(e) {
             attach: function (context, settings) {
                 changeFbShareButtonOnLoadMore();
             }
-        }
+        };
     }
-
 
 })();

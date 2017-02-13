@@ -21,4 +21,29 @@
     for (var i = 0; i < ingiro.length; i++) {
         ingiro[i].innerHTML= giroClone.outerHTML;
     }
+
+
+
+    (function initFooterNewsletterForm() {
+        var el = document.getElementById('block-mailchimpsubscriptionformgiromoneytimes');
+        // remove text messing with layout
+        var newsletterForm = {};
+        var newsletterInput = giro.querySelector('.form-email');
+        if (el) {
+            newsletterForm = el.getElementsByTagName('form');
+            newsletterForm[0].firstChild.textContent = '';
+            newsletterInput = el.querySelector('.form-email');
+            newsletterInput.placeholder = 'Digite seu e-mail';
+        }
+        window.setTimeout(function () {
+            el.classList.add('show');
+        }, 3500);
+
+        window.setTimeout(function () {
+            // if input empty
+            if (!newsletterInput.value) {
+                el.classList.remove('show');
+            }
+        }, 25000);
+    }());
 })();
