@@ -1,9 +1,17 @@
 footer .region-footer {
     margin-bottom: 0;
-    padding: 0.8rem 4rem 8.4rem 4rem;
+    /*padding: 0.8rem 4rem 8.4rem 4rem;*/
 
     background-color: #272c2e;
 
     color: #ffffff;
     font-size: 0.8rem;
+}
+
+#block-copy {
+    width: 100%;
+    padding-top: 0.8rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
 }

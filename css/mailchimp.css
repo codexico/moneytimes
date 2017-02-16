@@ -105,12 +105,6 @@
 }
 
 #block-mailchimpsubscriptionformgiromoneytimes {
-    position: fixed;
-    z-index: 99;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
     height: 0;
     margin: 0;
     padding: 0;
@@ -120,8 +114,16 @@
 
     -webkit-transition-duration: 1.2s;
 
-            transition-duration: 1.2s;
+    transition-duration: 1.2s;
     text-align: center;
+}
+
+#block-mailchimpsubscriptionformgiromoneytimes.fixed {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 #block-mailchimpsubscriptionformgiromoneytimes.show {
@@ -135,4 +137,9 @@
 }
 #block-mailchimpsubscriptionformgiromoneytimes .mailchimp-newsletter-mergefields {
     display: inline-block;
+}
+
+.mailchimp-parent--fixed {
+    padding-bottom: 7rem;
+
 }

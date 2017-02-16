@@ -76,26 +76,18 @@
                     'dialog.main.button.unsubscribe': 'CANCELAR CADASTRO',
                     'dialog.blocked.title': 'Desbloquear notificações',
                     'dialog.blocked.message': "Siga estes passos para permitir notificações:"
-                },
-                colors: { // Customize the colors of the main button and dialog popup button
-                    'circle.background': '#343c40',
-                    'circle.foreground': '#00c940',
-                    'badge.background': '#343c40',
-                    'badge.foreground': 'white',
-                    'badge.bordercolor': 'white',
-                    'pulse.color': 'white',
-                    'dialog.button.background.hovering': 'rgb(77, 101, 113)',
-                    'dialog.button.background.active': 'rgb(70, 92, 103)',
-                    'dialog.button.background': '#343c40',
-                    'dialog.button.foreground': 'white'
-                },
+                }
             }
         }]);
-        window.setTimeout(function () {
-            OneSignal.push(function() {
-                OneSignal.showHttpPrompt();
-            });
-        }, 5000);
+        OneSignal.push(["getNotificationPermission", function(permission) {
+            if (permission === 'default') {
+                window.setTimeout(function () {
+                    OneSignal.push(function() {
+                        OneSignal.showHttpPrompt();
+                    });
+                }, 5000);
+            }
+        }]);
         window.setTimeout(function () {
             var oneSignalPopOver = document.getElementById('onesignal-popover-container');
             if (oneSignalPopOver) {
