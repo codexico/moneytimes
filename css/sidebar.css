@@ -26,3 +26,16 @@
 
     text-align: center;
 }
+
+
+@media (min-width: 1024px) {
+    .first-sidebar-block--fixed .region-sidebar-first .block:last-child {
+        position: fixed;
+        top: 44px;
+    }
+
+    .second-sidebar-block--fixed .region-sidebar-second .block:last-child {
+        position: fixed;
+        top: 44px;
+    }
+}

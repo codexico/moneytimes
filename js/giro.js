@@ -22,24 +22,38 @@
         ingiro[i].innerHTML= giroClone.outerHTML;
     }
 
-
+function deFixFooterNewsletterFormPosition(el, $closeIcon) {
+    el.classList.remove('fixed');
+    el.parentNode.classList.remove('mailchimp-parent--fixed');
+    $closeIcon.remove();
+}
 
     (function initFooterNewsletterForm() {
         var el = document.getElementById('block-mailchimpsubscriptionformgiromoneytimes');
         // remove text messing with layout
         var newsletterForm = {};
         var newsletterInput = giro.querySelector('.form-email');
-        var container = el.parentNode;
+        var $closeIcon = jQuery('<i class="fa fa-close"></i>');
+        $closeIcon.css({position:'absolute', top:'1rem', right:'1rem'});
 
         // customize mailchimp form
         if (el) {
             el.classList.add('fixed');
-            container.classList.add('mailchimp-parent--fixed');
+            el.parentNode.classList.add('mailchimp-parent--fixed');
 
             newsletterForm = el.getElementsByTagName('form');
             newsletterForm[0].firstChild.textContent = '';
             newsletterInput = el.querySelector('.form-email');
             newsletterInput.placeholder = 'Digite seu e-mail';
+
+
+            jQuery(el).append($closeIcon);
+
+            $closeIcon.on('click', function () {
+                if (!newsletterInput.value) {
+                    deFixFooterNewsletterFormPosition(el, $closeIcon);
+                }
+            });
         }
         // show
         window.setTimeout(function () {
@@ -49,8 +63,7 @@
         window.setTimeout(function () {
             // if input empty
             if (!newsletterInput.value) {
-                el.classList.remove('fixed');
-                container.classList.remove('mailchimp-parent--fixed');
+                deFixFooterNewsletterFormPosition(el, $closeIcon);
             }
         }, 25000);
     }());
