@@ -4,8 +4,8 @@
 #block-views-block-ultimas-petrobras-block-1,
 #block-views-block-ultimas-perspectivas-2017-block-1,
 #block-views-block-ultimas-comprar-ou-vender-block-1 {
-    margin: 0 0 1rem 0;
-    padding: 1.25rem;
+    margin: 0 0 0.8rem 0;
+    padding: 0.8rem 1.5rem 0.4rem;
 
     border-radius: 2px;
     background: #ffffff;
@@ -38,8 +38,13 @@ block-views-block-ultimas-opiniao-block-1 h2,
     padding: 0.3rem 0 0.5rem;
 
     background: #ffffff;
+    text-align: center;
 }
 
 #block-fbpage {
     text-align: center;
+    width: 100%;
+}
+.fb-page {
+    width: 100%;
 }

@@ -153,7 +153,7 @@
 
 @media (min-width: 880px) {
     .layout-container {
-        padding-top: 9.1rem;
+        padding-top: 6.4rem;
         padding-bottom: 2rem;
 
         -webkit-transition-duration: 0.15s;
@@ -167,7 +167,7 @@
         -ms-flex-wrap: wrap;
     }
     .site-logo {
-        padding: 1.4rem 0;
+        padding: 1rem 0;
 
         -webkit-transition-duration: 0.15s;
                 transition-duration: 0.15s;
@@ -213,7 +213,7 @@
         display: block;
     }
     .menu--assuntos .menu-item {
-        line-height: 2.7;
+        line-height: 2;
     }
     /* menu fixed
    ======================================================================== */

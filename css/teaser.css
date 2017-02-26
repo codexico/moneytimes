@@ -100,23 +100,24 @@
     }
 }
 
-/* stiky
+/* sticky
    ========================================================================== */
-.node--view-mode-teaser.node--sticky {
+.view-frontpage .node--view-mode-teaser.node--sticky {
     padding: 0;
 
     border-color: #00c940;
+    max-height: 308px;
 }
-.node--view-mode-teaser.node--sticky:hover .field--name-title {
+.view-frontpage .node--view-mode-teaser.node--sticky:hover .field--name-title {
     text-decoration: underline;
 }
-.node--view-mode-teaser.node--sticky .node--teaser__teaser-details {
+.view-frontpage .node--view-mode-teaser.node--sticky .node--teaser__teaser-details {
     display: none;
 }
-.node--view-mode-teaser.node--sticky .node__title {
+.view-frontpage .node--view-mode-teaser.node--sticky .node__title {
     margin: 0;
 }
-.node--view-mode-teaser.node--sticky .node__title-link {
+.view-frontpage .node--view-mode-teaser.node--sticky .node__title-link {
     position: absolute;
     bottom: 0;
 
@@ -130,7 +131,7 @@
 
     color: #ffffff;
 }
-.node--view-mode-teaser.node--sticky .node__title-link .field--name-title {
+.view-frontpage .node--view-mode-teaser.node--sticky .node__title-link .field--name-title {
     position: absolute;
     bottom: 0;
 
@@ -139,21 +140,21 @@
     width: 100%;
     padding: 15.15rem 1.25rem 1.6rem 1.25rem;
 }
-.node--view-mode-teaser.node--sticky .node__content {
+.view-frontpage .node--view-mode-teaser.node--sticky .node__content {
     width: 100%;
     margin: 0;
 }
-.node--view-mode-teaser.node--sticky .field--name-field-image {
+.view-frontpage .node--view-mode-teaser.node--sticky .field--name-field-image {
     width: 100%;
 }
-.node--view-mode-teaser.node--sticky .field--name-field-image img {
+.view-frontpage .node--view-mode-teaser.node--sticky .field--name-field-image img {
     display: block;
 
     width: 100%;
 }
-.node--view-mode-teaser.node--sticky .field--name-field-resumo {
+.view-frontpage .node--view-mode-teaser.node--sticky .field--name-field-resumo {
     display: none;
 }
-.node--view-mode-teaser.node--sticky .addtoany_list {
+.view-frontpage .node--view-mode-teaser.node--sticky .addtoany_list {
     display: none !important;
 }

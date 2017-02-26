@@ -5,8 +5,12 @@
     margin: 0 0 1.4rem 0;
 
     color: #272c2e;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
+    padding-bottom: 0.1rem;
+}
+.block-views > h2 {
+    border-bottom: 2px solid #00c940;
 }
 .block-views h2 a {
     color: #272c2e;
@@ -46,6 +50,9 @@
     font-size: 0.8rem;
     font-weight: normal;
     text-decoration: none;
+
+    line-height: 1.4;
+    display: inline-block;
 }
 .view-box .views-field-title a:hover {
     text-decoration: underline;
@@ -64,37 +71,37 @@
     height: 100%;
 
     color: #00c940;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: normal;
     line-height: 1;
     content: counter(number);
     counter-increment: number;
 }
 .view-counter .views-row {
-    min-height: 3rem;
-    padding-left: 2rem;
+    min-height: 2rem;
+    padding-left: 1.5rem;
 }
 
 /* Front page list
    ========================================================================== */
-
+.path-frontpage .main-content .block-page-title-block {
+    display: none;
+}
 .view-frontpage .view-content .views-row:nth-child(1) {
-    margin-top: -2em;
+    overflow: hidden;
+    max-height: 308px;
 }
 .view-frontpage .view-content .views-row:nth-child(2) .node--view-mode-teaser {
-    margin-top: 5rem;
+    margin-top: 3.8rem;
 }
 .view-frontpage .view-content .views-row:nth-child(2) .node--view-mode-teaser:before {
     position: absolute;
-    top: -46px;
+    top: -2.6rem;
     left: 0;
-
-    display: block;
-
-    margin: 0 0 1.4rem 0;
-
     color: #222222;
     font-size: 1.25rem;
     font-weight: bold;
     content: "Últimas Notícias";
+    border-bottom: 2px solid #00c940;
+    width: 100%;
 }

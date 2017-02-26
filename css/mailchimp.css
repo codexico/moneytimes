@@ -128,7 +128,7 @@
 }
 
 #block-mailchimpsubscriptionformgiromoneytimes.show {
-    height: 6rem;
+    height: auto;
     padding: 0.8rem;
 }
 #block-mailchimpsubscriptionformgiromoneytimes h2 {
