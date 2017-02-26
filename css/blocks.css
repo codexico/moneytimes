@@ -38,12 +38,14 @@ block-views-block-ultimas-opiniao-block-1 h2,
     padding: 0.3rem 0 0.5rem;
 
     background: #ffffff;
+
     text-align: center;
 }
 
 #block-fbpage {
-    text-align: center;
     width: 100%;
+
+    text-align: center;
 }
 .fb-page {
     width: 100%;

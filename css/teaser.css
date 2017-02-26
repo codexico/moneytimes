@@ -103,10 +103,10 @@
 /* sticky
    ========================================================================== */
 .view-frontpage .node--view-mode-teaser.node--sticky {
+    max-height: 308px;
     padding: 0;
 
     border-color: #00c940;
-    max-height: 308px;
 }
 .view-frontpage .node--view-mode-teaser.node--sticky:hover .field--name-title {
     text-decoration: underline;
@@ -126,8 +126,7 @@
     /*background: rgba(0,0,0,0.5);*/
 
     background: -webkit-linear-gradient(top,transparent 50%,rgba(0,0,0,0.9) 100%);
-
-    background: linear-gradient(to bottom,transparent 50%,rgba(0,0,0,0.9) 100%);
+    background:         linear-gradient(to bottom,transparent 50%,rgba(0,0,0,0.9) 100%);
 
     color: #ffffff;
 }

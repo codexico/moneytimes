@@ -67,9 +67,9 @@
     display: -ms-flexbox;
     display: flex;
 
-    -ms-flex-wrap: wrap;
-
         flex-wrap: wrap;
+
+    -ms-flex-wrap: wrap;
 }
 .js-insert-giro .block-mailchimp-signup .mailchimp-newsletter-mergefields {
     display: -webkit-box;
@@ -84,14 +84,14 @@
     display: -ms-flexbox;
     display: flex;
 
-    -ms-flex-item-align: center;
-
-        align-self: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-self: center;
+    justify-content: center;
 
     height: 2rem;
+
+    -ms-flex-item-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
 }
 
 @media (min-width: 768px) {
@@ -106,6 +106,7 @@
 
 #block-mailchimpsubscriptionformgiromoneytimes {
     position: relative;
+
     height: 0;
     margin: 0;
     padding: 0;
@@ -114,8 +115,7 @@
     box-shadow: 0 -2px 2px 0 #00c940;
 
     -webkit-transition-duration: 1.2s;
-
-    transition-duration: 1.2s;
+            transition-duration: 1.2s;
     text-align: center;
 }
 
@@ -142,5 +142,4 @@
 
 .mailchimp-parent--fixed {
     padding-bottom: 7rem;
-
 }
