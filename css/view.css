@@ -91,21 +91,23 @@
     overflow: hidden;
 
     max-height: 308px;
+    margin-bottom: 2rem;
 }
-.view-frontpage .view-content .views-row:nth-child(2) .node--view-mode-teaser {
-    margin-top: 3.8rem;
-}
-.view-frontpage .view-content .views-row:nth-child(2) .node--view-mode-teaser:before {
-    position: absolute;
-    top: -2.6rem;
-    left: 0;
 
+.view-frontpage-link_title {
     width: 100%;
+    margin: 0 0 1.4rem 0;
+    padding-bottom: 0.1rem;
 
     border-bottom: 2px solid #00c940;
 
-    color: #222222;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    content: "Últimas Notícias";
+}
+.view-frontpage-link_link {
+    color: #272c2e;
+    text-decoration: none;
+}
+.view-frontpage-link_link:hover {
+    text-decoration: underline;
 }

@@ -82,4 +82,11 @@
         };
     }
 
+
+    function insertLinkBetweenNews() {
+        var $linkUltimas = jQuery('<h2 class="view-frontpage-link_title"><a class="view-frontpage-link_link" href="/ultimas-noticias">Últimas Notícias</a></h2>');
+        $linkUltimas.insertAfter('.view-frontpage .views-row:first-child');
+    }
+    insertLinkBetweenNews();
+
 })();
