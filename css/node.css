@@ -90,10 +90,7 @@ a.node__title-link:hover {
 .node--type-patrocinado p a {
     display: inline-block;
 
-    max-width: 500px;
-
     color: #00c940;
-    vertical-align: top;
     word-wrap: break-word;
 }
 @media (max-width: 1024px) {
