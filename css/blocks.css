@@ -3,13 +3,36 @@
 #block-views-block-asdf-tag-noticia-block-1,
 #block-views-block-ultimas-petrobras-block-1,
 #block-views-block-ultimas-perspectivas-2017-block-1,
-#block-views-block-ultimas-comprar-ou-vender-block-1 {
+#block-views-block-ultimas-comprar-ou-vender-block-1,
+#block-logotradingview,
+#block-logotradingview2 {
     margin: 0 0 0.8rem 0;
     padding: 0.8rem 1.5rem 0.4rem;
 
     border-radius: 2px;
     background: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
+}
+
+.sidebar-block-img {
+    width: 100%;
+}
+
+#block-logotradingview2 .sidebar-block-img {
+    width: 77%;
+}
+
+#block-amazon-2 {
+    margin-bottom: 1rem;
+}
+
+#block-bussoladoinvestidorwidgettopmovers {
+    margin: 0 0 0.8rem 0;
+    padding: 0.8rem 5px 0rem;
+    border-radius: 2px;
+    background: #ffffff;
+    height: 406px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.1), 0 3px 1px -2px rgba(0,0,0,0);
 }
 
 block-views-block-ultimas-opiniao-block-1 h2,
