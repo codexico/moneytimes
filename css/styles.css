@@ -93,6 +93,7 @@ main {
     #block-managedad {
         display: block;
 
+        margin-bottom: 0.8rem;
         text-align: center;
     }
     .main-content {

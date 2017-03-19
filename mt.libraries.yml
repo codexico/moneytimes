@@ -25,3 +25,4 @@ base:
     js/app.js: {}
     js/giro.js: {}
     js/scroll.js: {}
+    js/inactivity.js: {}
