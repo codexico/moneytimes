@@ -1,8 +1,8 @@
-/*.addtoany_list {*/
-    /*display: inline-block;*/
+.addtoany_list {
+    display: inline-block;
 
-    /*padding-top: 1rem;*/
-/*}*/
+    padding-top: 1rem;
+}
 .addtoany_list > a {
     margin-bottom: 8px;
 }

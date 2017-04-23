@@ -136,15 +136,6 @@ main {
     }
 }
 
-.feed-icons {
-    margin-bottom: 1rem;
-}
-@media (min-width: 640px) {
-    .feed-icons {
-        margin-bottom: 0;
-    }
-}
-
 .messages--status {
     margin: 0 1.5rem 1.5rem 1.5rem;
 }

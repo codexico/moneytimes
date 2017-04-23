@@ -111,7 +111,9 @@
 
 @media (min-width: 1280px) {
     .node--view-mode-teaser .addtoany_list {
+        position: absolute;
         bottom: 4px;
+        right: 2.2rem;
     }
 }
 
