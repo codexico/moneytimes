@@ -1,8 +1,8 @@
-.addtoany_list {
-    display: inline-block;
+/*.addtoany_list {*/
+    /*display: inline-block;*/
 
-    padding-top: 1rem;
-}
+    /*padding-top: 1rem;*/
+/*}*/
 .addtoany_list > a {
     margin-bottom: 8px;
 }
@@ -10,14 +10,15 @@
 .block-addtoany {
     position: relative;
     z-index: 1;
+    text-align: right;
 }
 .block-addtoany .addtoany_list > a {
     padding: 0 1px;
 }
 
-@media (min-width: 1280px) {
-    .addtoany_list {
-        position: absolute;
-        right: 2.2rem;
-    }
-}
+/*@media (min-width: 1280px) {*/
+    /*.addtoany_list {*/
+        /*position: absolute;*/
+        /*right: 2.2rem;*/
+    /*}*/
+/*}*/

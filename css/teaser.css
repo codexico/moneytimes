@@ -28,6 +28,21 @@
 .node--type-patrocinado.node--view-mode-teaser .node__content {
     margin: 0 0 0.5rem 0;
 }
+.node--teaser__patrocinado {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 1px;
+    background-color: #343c40;
+    color: #ffffff;
+    font-size: 0.65rem;
+    padding: 0 0.2rem 0.1rem;
+}
+
+.node--type-patrocinado.node--view-mode-teaser .node__title {
+    font-style: italic;
+}
+
 @media (min-width: 1280px) {
     .node--view-mode-teaser {
         padding: 1.15rem 1.25rem 1.25rem 1.25rem;
@@ -103,7 +118,6 @@
 /* sticky
    ========================================================================== */
 .view-frontpage .node--view-mode-teaser.node--sticky {
-    max-height: 308px;
     padding: 0;
 
     border-color: #00c940;

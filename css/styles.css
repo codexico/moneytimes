@@ -26,13 +26,14 @@ main {
 .block-adsense-managed-ad-block {
     display: none;
 }
-
-.layout-sidebar-first {
-    order: 3;
-
-    width: 300px; /* investing.com */
+.layout-sidebar-first,
+.layout-sidebar-second {
+    width: 300px; /* ads */
     min-width: 300px; /* IE */
     margin: 0 auto;
+}
+.layout-sidebar-first {
+    order: 3;
 
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
@@ -94,6 +95,7 @@ main {
         display: block;
 
         margin-bottom: 0.8rem;
+
         text-align: center;
     }
     .main-content {

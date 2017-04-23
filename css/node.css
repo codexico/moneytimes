@@ -78,6 +78,13 @@ a.node__title-link:hover {
 .node--view-mode-full .field--type-text-with-summary img {
     max-width: 100%;
 }
+.node--view-mode-full .field--type-text-long .caption-img img {
+    margin-bottom: 0.5rem;
+}
+.caption > figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+}
 .node--type-noticia p,
 .node--type-patrocinado p {
     line-height: 1.5;
@@ -118,12 +125,12 @@ a.node__title-link:hover {
     }
 }
 
-@media (min-width: 1280px) {
-    .main-content_noticia .addtoany_list,
-    .main-content_patrocinado .addtoany_list {
-        top: -4px;
-    }
-}
+/*@media (min-width: 1280px) {*/
+    /*.main-content_noticia .addtoany_list,*/
+    /*.main-content_patrocinado .addtoany_list {*/
+        /*top: -4px;*/
+    /*}*/
+/*}*/
 
 
 /* ==========================================================================
