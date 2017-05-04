@@ -60,7 +60,7 @@
             item.dataset.size = "small";
             // item.dataset.showFaces = "false";
             item.dataset.share = "true";
-            item.dataset.width = "126";
+            item.dataset.width = "143";
         }
     }
 
