@@ -49,5 +49,5 @@
         }
     }
 
-    // window.addEventListener('load', initInactivity);
+    window.addEventListener('load', initInactivity);
 })();
