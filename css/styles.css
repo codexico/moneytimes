@@ -23,7 +23,8 @@ main {
 #block-bannernoticias,
 #block-adsensecabecalho,
 .adsense_cabecalho,
-.block-adsense-managed-ad-block {
+.block-adsense-managed-ad-block,
+.block-leaderboard {
     display: none;
 }
 .layout-sidebar-first,
@@ -91,12 +92,15 @@ main {
         font-size: 0;
         text-align: center;
     }
-    #block-managedad {
+    #block-managedad,
+    .block-leaderboard {
         display: block;
 
-        margin-bottom: 0.8rem;
+        margin: 0 auto 0.8rem auto;
 
         text-align: center;
+        width: 728px;
+        height: 90px;
     }
     .main-content {
         display: -webkit-box;
@@ -124,10 +128,13 @@ main {
         font-size: 0;
         text-align: center;
     }
-    #block-managedad {
+    #block-managedad,
+    .block-leaderboard {
         display: block;
 
         text-align: center;
+        width: 728px;
+        height: 90px;
     }
     .main-content {
         display: -webkit-box;

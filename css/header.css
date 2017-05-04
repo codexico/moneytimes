@@ -155,9 +155,6 @@
     .layout-container {
         padding-top: 6.4rem;
         padding-bottom: 2rem;
-
-        -webkit-transition-duration: 0.15s;
-                transition-duration: 0.15s;
     }
     .header {
             flex-wrap: wrap;

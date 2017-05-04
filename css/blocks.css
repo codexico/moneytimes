@@ -21,9 +21,13 @@
     border-radius: 2px;
     background: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
-
+    width: 300px;
+    height: 250px;
 }
-
+#block-logotradingview2 {
+    width: 300px;
+    height: 210px;
+}
 .sidebar-block-img {
     width: 100%;
 }
@@ -46,7 +50,7 @@
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.1), 0 3px 1px -2px rgba(0,0,0,0);
 }
 
-block-views-block-ultimas-opiniao-block-1 h2,
+#block-views-block-ultimas-opiniao-block-1 h2,
 #block-views-block-mais-lidas h2,
 #block-views-block-ultimas-petrobras-block-1,
 #block-views-block-ultimas-perspectivas-2017-block-1,
@@ -99,4 +103,54 @@ block-views-block-ultimas-opiniao-block-1 h2,
 
 .view-footer a:hover {
     text-decoration: underline;
+}
+
+.block-sidebar-img {
+    margin: 0 0 0.8rem 0;
+    padding: 0;
+
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
+    width: 300px;
+    height: 250px;
+}
+
+#block-conteudocorrespondente {
+    width: 100%;
+}
+#block-conteudocorrespondente .adsbygoogle {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:500px) {
+    #block-conteudocorrespondente .adsbygoogle {
+        width: 460px;
+    }
+}
+@media (min-width:800px) {
+    #block-conteudocorrespondente .adsbygoogle {
+        width: 760px;
+    }
+}
+@media (min-width:1024px) {
+    #block-conteudocorrespondente .adsbygoogle {
+        width: 320px;
+    }
+}
+@media (min-width:1280px) {
+    #block-conteudocorrespondente .adsbygoogle {
+        width: 480px;
+    }
+}
+@media (min-width:1366px) {
+    #block-conteudocorrespondente .adsbygoogle {
+        width: 620px;
+    }
+}
+@media (min-width:1600px) {
+    #block-conteudocorrespondente .adsbygoogle {
+        width: 860px;
+    }
 }

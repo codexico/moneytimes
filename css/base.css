@@ -26,3 +26,9 @@ h1 {
         font-size: 2em;
     }
 }
+
+@media (min-width: 1024px) {
+    .only-mobile {
+        display: none;
+    }
+}
