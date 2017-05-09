@@ -1,7 +1,7 @@
 .addtoany_list {
     display: inline-block;
 
-    padding-top: 1rem;
+    padding-top: 0.4rem;
 }
 .addtoany_list > a {
     margin-bottom: 8px;
