@@ -1,6 +1,6 @@
 (function() {
     // reload page after period of inactivity
-    var inactivityPeriod = 5 * 60 * 1000; // 5 minutes
+    var inactivityPeriod = 4 * 60 * 1000; // 4 minutes
     var requestedTimeout = false;
     var inactivityTimer = 0;
 
