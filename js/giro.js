@@ -38,8 +38,8 @@
 
         // customize mailchimp form
         if (el) {
-            // el.classList.add('fixed');
-            // el.parentNode.classList.add('mailchimp-parent--fixed');
+            el.classList.add('fixed');
+            el.parentNode.classList.add('mailchimp-parent--fixed');
 
             newsletterForm = el.getElementsByTagName('form');
             newsletterForm[0].firstChild.textContent = '';
@@ -47,18 +47,18 @@
             newsletterInput.placeholder = 'Digite seu e-mail';
 
 
-            // jQuery(el).append($closeIcon);
+            jQuery(el).append($closeIcon);
 
-            // $closeIcon.on('click', function () {
-            //     if (!newsletterInput.value) {
-            //         deFixFooterNewsletterFormPosition(el, $closeIcon);
-            //     }
-            // });
+            $closeIcon.on('click', function () {
+                if (!newsletterInput.value) {
+                    deFixFooterNewsletterFormPosition(el, $closeIcon);
+                }
+            });
         }
         // show
-        // window.setTimeout(function () {
+        window.setTimeout(function () {
             el.classList.add('show');
-        // }, 3500);
+        }, 3500);
         // return to original position
         window.setTimeout(function () {
             // if input empty
