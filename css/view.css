@@ -1,22 +1,26 @@
 .block-view {
     margin-bottom: 2.15rem;
 }
-.block-views h2 {
-    margin: 0 0 1.4rem 0;
+.block-views h2,
+#block-conteudocorrespondente h2 {
+    margin: 0.2rem 0 1.4rem 0;
     padding-bottom: 0.1rem;
 
     color: #272c2e;
     font-size: 1rem;
     font-weight: bold;
 }
-.block-views > h2 {
+.block-views > h2,
+#block-conteudocorrespondente > h2 {
     border-bottom: 2px solid #00c940;
 }
-.block-views h2 a {
+.block-views h2 a,
+#block-conteudocorrespondente h2 a {
     color: #272c2e;
     text-decoration: none;
 }
-.block-views h2 a:hover {
+.block-views h2 a:hover,
+#block-conteudocorrespondente h2 a:hover {
     text-decoration: underline;
 }
 #block-views-block-ultimas-noticias-block-1 {
