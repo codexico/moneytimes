@@ -15,10 +15,11 @@ a > img {
     vertical-align: middle;
 }
 h1 {
+    margin: 1em 0 0.2rem;
+
     color: #272c2e;
     font-size: 1.5em;
     line-height: 1.25;
-    margin: 1em 0 0.2rem;
 }
 @media (min-width: 1130px) {
     h1 {

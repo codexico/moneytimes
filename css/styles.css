@@ -94,11 +94,11 @@ main {
     .block-leaderboard {
         display: block;
 
+        width: 728px;
+        height: 90px;
         margin: 0 auto 0.8rem auto;
 
         text-align: center;
-        width: 728px;
-        height: 90px;
     }
     .main-content {
         display: -webkit-box;
@@ -130,9 +130,10 @@ main {
     .block-leaderboard {
         display: block;
 
-        text-align: center;
         width: 728px;
         height: 90px;
+
+        text-align: center;
     }
     .main-content {
         display: -webkit-box;

@@ -17,19 +17,20 @@
 #block-correspondentelateral {
     margin: 0 0 0.8rem 0;
     padding: 0;
+
     border-radius: 2px;
     background: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
 }
 #block-tradersclubgif {
+    width: 300px;
+    height: 250px;
     margin: 0 0 0.8rem 0;
     padding: 0;
 
     border-radius: 2px;
     background: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
-    width: 300px;
-    height: 250px;
 }
 #block-logotradingview2 {
     width: 300px;
@@ -91,9 +92,9 @@
 
 #block-fbpage {
     width: 100%;
+    margin-bottom: 1rem;
 
     text-align: center;
-    margin-bottom: 1rem;
 }
 .fb-page {
     width: 100%;
@@ -103,9 +104,9 @@
     text-align: right;
 }
 .view-footer a {
-    text-decoration: none;
-    font-size: 0.8rem;
     color: #222222;
+    font-size: 0.8rem;
+    text-decoration: none;
 }
 
 .view-footer a:hover {
@@ -113,14 +114,14 @@
 }
 
 .block-sidebar-img {
+    width: 300px;
+    height: 250px;
     margin: 0 0 0.8rem 0;
     padding: 0;
 
     border-radius: 2px;
     background: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0);
-    width: 300px;
-    height: 250px;
 }
 
 #block-conteudocorrespondente {
@@ -128,8 +129,8 @@
 }
 #block-conteudocorrespondente .adsbygoogle {
     width: 300px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 @media (min-width:500px) {
     #block-conteudocorrespondente .adsbygoogle {

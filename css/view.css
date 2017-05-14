@@ -107,6 +107,7 @@
     overflow: hidden;
 
     width: 49%;
+
     vertical-align: top;
 }
 .view-frontpage .view-content .views-row:nth-child(2) {
@@ -146,13 +147,13 @@
     position: relative;
     bottom: initial;
 
+    min-height: 3.2rem;
     padding: 0;
 
     background: white;
 
     color: #222222;
     font-size: 1rem;
-    min-height: 3.2rem;
 }
 
 .view-frontpage .view-content .views-row:nth-child(2) .node__title-link,

@@ -32,11 +32,14 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    padding: 0 0.2rem 0.1rem;
+
     border-radius: 1px;
     background-color: #343c40;
+
     color: #ffffff;
     font-size: 0.65rem;
-    padding: 0 0.2rem 0.1rem;
 }
 
 .node--type-patrocinado.node--view-mode-teaser .node__title {
@@ -112,8 +115,8 @@
 @media (min-width: 1280px) {
     .node--view-mode-teaser .addtoany_list {
         position: absolute;
-        bottom: 4px;
         right: 2.2rem;
+        bottom: 4px;
     }
 }
 
@@ -135,10 +138,10 @@
     }
 }
 .field--name-field-chapeu a {
-    font-size: 0.8rem;
     color: #a5a5a5;
-    text-transform: uppercase;
+    font-size: 0.8rem;
     font-weight: 900;
+    text-transform: uppercase;
 }
 .field--name-field-chapeu a:hover {
     color: #666666;
@@ -150,19 +153,20 @@
 }
 
 .view-frontpage .view-content .views-row:nth-child(1) .field--name-field-chapeu a {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: #fff;
     text-shadow: 2px 2px 3px black;
+
+    color: #ffffff;
+    font-size: 0.8rem;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 
 .view-frontpage .view-content .views-row:nth-child(2) .field--name-field-chapeu,
 .view-frontpage .view-content .views-row:nth-child(3) .field--name-field-chapeu {
+    top: initial;
     bottom: -1.2rem;
     left: 0.8rem;
-    top: initial;
 }
 .view-frontpage .view-content .views-row:nth-child(2) .node__content,
 .view-frontpage .view-content .views-row:nth-child(3) .node__content {

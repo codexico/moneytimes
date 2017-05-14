@@ -10,6 +10,7 @@
 .block-addtoany {
     position: relative;
     z-index: 1;
+
     text-align: right;
 }
 @media (max-width: 700px) {
@@ -24,8 +25,8 @@
 }
 
 /*@media (min-width: 1280px) {*/
-    /*.addtoany_list {*/
-        /*position: absolute;*/
-        /*right: 2.2rem;*/
-    /*}*/
+/*.addtoany_list {*/
+/*position: absolute;*/
+/*right: 2.2rem;*/
+/*}*/
 /*}*/
