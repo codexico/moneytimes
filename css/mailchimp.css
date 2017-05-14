@@ -128,9 +128,15 @@
 }
 
 #block-mailchimpsubscriptionformgiromoneytimes.show {
-    height: auto;
+    height: 9rem;
     padding: 0.8rem;
 }
+@media (min-width: 360px) {
+    #block-mailchimpsubscriptionformgiromoneytimes.show {
+        height: 6rem;
+    }
+}
+
 #block-mailchimpsubscriptionformgiromoneytimes h2 {
     margin: 0;
 
@@ -141,5 +147,10 @@
 }
 
 .mailchimp-parent--fixed {
-    padding-bottom: 7rem;
+    padding-bottom: 9rem;
+}
+@media (min-width: 360px) {
+    .mailchimp-parent--fixed {
+        padding-bottom: 6rem;
+    }
 }
