@@ -92,14 +92,14 @@
 .node--type-patrocinado.node--view-mode-teaser .node__title a:hover {
     text-decoration: underline;
 }
+.node--teaser__teaser-details {
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+}
 @media (min-width: 1280px) {
     .field--name-field-resumo {
         display: initial;
-    }
-    .node--teaser__teaser-details {
-        position: absolute;
-        top: 1rem;
-        right: 1.4rem;
     }
 
     .node--type-noticia.node--view-mode-teaser .node__title,
@@ -117,25 +117,31 @@
     }
 }
 
-.field.field--name-field-chapeu {
+.field--name-field-chapeu {
     position: absolute;
-    top: 2.3rem;
+    top: 0rem;
     left: 1rem;
 }
+.node--teaser__teaser-details {
+    top: 0rem;
+}
 @media (min-width: 1280px) {
-    .field.field--name-field-chapeu {
-        top: 0;
+    .field--name-field-chapeu {
+        top: 0.2rem;
         left: 1.25rem;
+    }
+    .node--teaser__teaser-details {
+        top: 0.2rem;
     }
 }
 .field--name-field-chapeu a {
-    text-decoration: none;
     font-size: 0.8rem;
-    color: #222222;
+    color: #a5a5a5;
     text-transform: uppercase;
+    font-weight: 900;
 }
 .field--name-field-chapeu a:hover {
-    text-decoration: underline;
+    color: #666666;
 }
 .view-frontpage .view-content .views-row:nth-child(1) .field--name-field-chapeu {
     top: initial;
@@ -144,7 +150,6 @@
 }
 
 .view-frontpage .view-content .views-row:nth-child(1) .field--name-field-chapeu a {
-    text-decoration: none;
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #fff;
@@ -163,8 +168,8 @@
 .view-frontpage .view-content .views-row:nth-child(3) .node__content {
     position: relative;
 }
-.field--name-field-chapeu {
-    display: none !important;
+.node--sticky .field--name-field-chapeu {
+    display: none;
 }
 /* sticky
    ========================================================================== */

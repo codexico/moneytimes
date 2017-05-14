@@ -13,8 +13,6 @@ main {
     -ms-flex-direction: column;
 }
 .region-content {
-    position: relative;
-
     width: 100%;
 }
 .layout-content {

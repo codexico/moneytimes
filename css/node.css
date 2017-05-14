@@ -1,8 +1,19 @@
-.node--type-noticia,
 .node--type-patrocinado {
     position: relative;
 }
 
+/* node chapeu
+   ========================================================================== */
+.node--view-mode-full .field--name-field-chapeu {
+    position: absolute;
+    top: 0.2rem;
+    left: 1rem;
+}
+@media (min-width: 1280px) {
+    .node--view-mode-full .field--name-field-chapeu {
+        left: 2rem;
+    }
+}
 /* node title
    ========================================================================== */
 .node__title {
