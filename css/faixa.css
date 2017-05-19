@@ -5,34 +5,22 @@
 
     justify-content: center;
 
-    margin: 1rem 10%;
+    margin: 0 0.5rem 0.5rem;
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
 }
 .faixa-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    justify-content: center;
-
     border-radius: 1px;
     background-color: #272c2e;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.1), 0 3px 1px -2px rgba(0,0,0,0);
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
 }
 .faixa-chapeu {
-    margin: 0.5rem 1rem 0.5rem 1rem;
-    padding-right: 2rem;
-
-    border-right: 1px solid #343c40;
+    margin: 0.5rem 0 0.5rem 1rem;
 }
 .faixa-chapeu_link {
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
@@ -45,8 +33,31 @@
 }
 .faixa-titulo_link {
     color: #00c940;
+    font-size: 0.9rem;
+    font-weight: 900;
     text-decoration: none;
 }
 .faixa-titulo_link:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+    .faixa {
+        margin: 1rem 10%;
+    }
+    .faixa-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        justify-content: center;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+    }
+    .faixa-chapeu {
+        padding-right: 1rem;
+
+        border-right: 1px solid #343c40;
+    }
 }
