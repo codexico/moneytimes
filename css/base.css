@@ -5,6 +5,9 @@
 *::before {
     box-sizing: border-box;
 }
+input[type="search"] {
+    box-sizing: border-box; /* fix normalize */
+}
 body {
     background: #f4f4f4;
 

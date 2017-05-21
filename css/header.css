@@ -279,22 +279,16 @@
     }
 
     .social-icons {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-
-            flex-direction: row;
-        align-items: flex-end;
-
-        margin-right: 0.2rem;
+        position: absolute;
+        top: 0.3rem;
+        right: 3rem;
 
         font-size: 1.2rem;
-
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
+    }
+    .menu--fixed .social-icons {
+        position: relative;
+        top: initial;
+        right: initial;
     }
     .social-icon {
         display: -webkit-inline-box;

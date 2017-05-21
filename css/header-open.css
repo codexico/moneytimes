@@ -218,12 +218,6 @@
     }
 
     .search_form {
-        position: absolute;
-        top: 0.8rem;
-
         width: 100%;
-    }
-    .search_form-icons {
-        margin: 0 auto;
     }
 }
