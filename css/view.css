@@ -122,8 +122,8 @@
 }
 .view-frontpage .view-content .views-row:nth-child(2):lang(en) .node--teaser__teaser-details,
 .view-frontpage .view-content .views-row:nth-child(3):lang(en) .node--teaser__teaser-details {
-    bottom: 1.2rem;
     top: initial;
+    bottom: 1.2rem;
 }
 .view-frontpage .view-content .views-row:nth-child(2) {
     margin-right: -5px;
