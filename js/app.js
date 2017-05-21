@@ -115,10 +115,10 @@
                 link.setAttribute('target', '_blank');
             });
     }
-    Drupal.behaviors.targetBlank = {
-        attach: function (context) {
-            addBlankTolinks(context);
-        }
-    };
+    // Drupal.behaviors.targetBlank = {
+    //     attach: function (context) {
+    //         addBlankTolinks(context);
+    //     }
+    // };
 
 })();
