@@ -43,7 +43,7 @@
 
 @media (min-width: 1024px) {
     .faixa {
-        margin: 1rem 6%;
+        margin: 1rem;
     }
     .faixa-body {
         display: -webkit-box;
