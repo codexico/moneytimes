@@ -19,7 +19,7 @@
 
     // insert giro into
     for (var i = 0; i < ingiro.length; i++) {
-        ingiro[i].innerHTML= giroClone.outerHTML;
+        ingiro[i].innerHTML = giroClone.outerHTML;
     }
 
     function deFixFooterNewsletterFormPosition(el, $closeIcon) {
@@ -28,7 +28,21 @@
         $closeIcon.remove();
     }
 
-    (function initFooterNewsletterForm() {
+    function showFixedNewsletterForm(el, newsletterInput, $closeIcon) {
+        // show
+        window.setTimeout(function () {
+            el.classList.add('show');
+        }, 3500);
+        // return to original position
+        window.setTimeout(function () {
+            // if input empty
+            if (!newsletterInput.value) {
+                deFixFooterNewsletterFormPosition(el, $closeIcon);
+            }
+        }, 25000);
+    }
+
+    function initFooterNewsletterForm() {
         var el = document.getElementById('block-mailchimpsubscriptionformgiromoneytimes');
         // remove text messing with layout
         var newsletterForm = {};
@@ -54,17 +68,15 @@
                     deFixFooterNewsletterFormPosition(el, $closeIcon);
                 }
             });
-        }
-        // show
-        window.setTimeout(function () {
-            el.classList.add('show');
-        }, 3500);
-        // return to original position
-        window.setTimeout(function () {
-            // if input empty
-            if (!newsletterInput.value) {
+
+            if (window.location.pathname === '/') {
+                showFixedNewsletterForm(el, newsletterInput, $closeIcon);
+            } else {
+                el.classList.add('show');
                 deFixFooterNewsletterFormPosition(el, $closeIcon);
             }
-        }, 25000);
-    }());
+        }
+    }
+
+    initFooterNewsletterForm();
 })();
