@@ -149,7 +149,20 @@
     color: #e6e6e6;
     text-decoration: none;
 }
+.social-icon:hover {
+    color: #00c940;
+}
+.social-language {
+    padding: 0.1rem;
 
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.social-language:hover {
+    color: #00c940;
+}
 
 @media (min-width: 880px) {
     .layout-container {
