@@ -107,7 +107,23 @@
           enable_page_level_ads: true
         });
       </script>
-
+      <script type="text/javascript">
+        window._taboola = window._taboola || [];
+        _taboola.push({article:'auto'});
+        !function (e, f, u, i) {
+          if (!document.getElementById(i)){
+            e.async = 1;
+            e.src = u;
+            e.id = i;
+            f.parentNode.insertBefore(e, f);
+          }
+        }(document.createElement('script'),
+          document.getElementsByTagName('script')[0],
+          '//cdn.taboola.com/libtrc/moneytimescombr/loader.js',
+          'tb_loader_script');
+        if(window.performance && typeof window.performance.mark == 'function')
+        {window.performance.mark('tbl_ic');}
+      </script>
   </head>
   <body{{ attributes.addClass(body_classes) }}>
   <div id="fb-root"></div>
@@ -129,5 +145,9 @@
     {{ page }}
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({flush: true});
+    </script>
   </body>
 </html>

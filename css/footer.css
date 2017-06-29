@@ -1,17 +1,19 @@
 footer .region-footer {
-    margin-bottom: 0;
-    /*padding: 0.8rem 4rem 8.4rem 4rem;*/
+  margin-bottom: 0;
 
-    background-color: #272c2e;
+  background-color: #272c2e;
 
-    color: #ffffff;
-    font-size: 0.8rem;
+  color: #ffffff;
+  font-size: 0.8rem;
 }
 
 #block-copy {
-    width: 100%;
-    padding-top: 0.8rem;
-    padding-right: 4rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#block-copy .field--name-body {
+  width: 90%;
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
 }
