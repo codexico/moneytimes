@@ -1,3 +1,16 @@
+/**
+<div class="faixa">
+  <div class="faixa-body">
+    <p class="faixa-chapeu">
+      <a class="faixa-chapeu_link" >chapéu</a>
+    </p>
+    <p class="faixa-titulo">
+      <a class="faixa-titulo_link" >titulo</a>
+    </p>
+  </div>
+</div>
+ */
+
 .faixa {
     display: -webkit-box;
     display: -ms-flexbox;
