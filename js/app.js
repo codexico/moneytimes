@@ -73,8 +73,16 @@
     insertLinkBetweenNews();
 
     function insertPatrocinadoBetweenNews() {
-        var $patrocinado = jQuery('.view-patrocinado-home');
-        $patrocinado.insertAfter('.view-frontpage .views-row:nth-child(6)');
+        var $patrocinado = jQuery('.view-patrocinado-home .views-row');
+
+        var position = 6;
+        var selector = '.view-frontpage .views-row:nth-child(6)';
+
+        $patrocinado.each(function (index, patrocinado) {
+          jQuery(patrocinado).insertAfter(selector);
+          position = position + 3;
+          selector = '.view-frontpage .views-row:nth-child(' + position + ')';
+        });
     }
     insertPatrocinadoBetweenNews();
 
