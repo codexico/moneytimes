@@ -27,7 +27,7 @@
   function deFixFooterNewsletterFormPosition(el) {
     el.classList.remove('fixed');
     el.parentNode.classList.remove('mailchimp-parent--fixed');
-    el.querySelector('.fa-close').remove();
+    // el.querySelector('.fa-close').remove();
   }
 
   function showFixedNewsletterForm(el, newsletterInput) {
