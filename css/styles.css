@@ -18,11 +18,12 @@ main {
 .layout-content {
     width: 100%;
 }
+
 #block-bannernoticias,
 #block-adsensecabecalho,
 .adsense_cabecalho,
-.block-adsense-managed-ad-block,
-.block-leaderboard {
+.block-leaderboard,
+.region-highlighted .block-adsense-managed-ad-block {
     display: none;
 }
 .layout-sidebar-first,
@@ -84,7 +85,7 @@ main {
     }
     #block-adsensecabecalho,
     .adsense_cabecalho,
-    .block-adsense-managed-ad-block {
+    .region-highlighted .block-adsense-managed-ad-block {
         display: block;
 
         font-size: 0;
@@ -119,8 +120,7 @@ main {
     }
     #block-bannernoticias,
     #block-adsensecabecalho,
-    .adsense_cabecalho,
-    .block-adsense-managed-ad-block {
+    .adsense_cabecalho {
         display: block;
 
         font-size: 0;
