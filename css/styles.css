@@ -23,7 +23,7 @@ main {
 #block-adsensecabecalho,
 .adsense_cabecalho,
 .block-leaderboard,
-.region-highlighted .block-adsense-managed-ad-block {
+.block-adsense-managed-ad-block {
     display: none;
 }
 .layout-sidebar-first,
@@ -85,7 +85,7 @@ main {
     }
     #block-adsensecabecalho,
     .adsense_cabecalho,
-    .region-highlighted .block-adsense-managed-ad-block {
+    .block-adsense-managed-ad-block {
         display: block;
 
         font-size: 0;
