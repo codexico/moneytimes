@@ -3,23 +3,23 @@
 
   var giro = document.getElementById('block-mailchimpsubscriptionformrecebaanalisesgratis');
 
-    // fix placeholder
+  // fix placeholder
   var giroInput = giro.querySelector('.form-email');
   giroInput.placeholder = 'Digite seu e-mail';
 
-    // clone giro block
+  // clone giro block
   var giroClone = giro.cloneNode(true);
 
-    // adapt form
+  // adapt form
   var legend = '<span class="block-mailchimp-signup-legend">Receba notícias e análises com o <b>Giro Money Times</b>! Deixe o seu-email e pronto!</span>';
   var giroForm = giroClone.querySelector('form');
   giroForm.childNodes[0].textContent = '';
   giroForm.insertAdjacentHTML('beforebegin', legend);
 
-    // find elements to insert into
+  // find elements to insert into
   var ingiro = document.querySelectorAll('.js-insert-giro');
 
-    // insert giro into
+  // insert giro into
   for (var i = 0; i < ingiro.length; i++) {
     ingiro[i].innerHTML = giroClone.outerHTML;
   }
@@ -30,14 +30,15 @@
     // el.querySelector('.fa-close').remove();
   }
 
+  /*
   function showFixedNewsletterForm(el, newsletterInput) {
-        // show
+    // show
     window.setTimeout(function () {
       el.classList.add('show');
     }, 3500);
-        // return to original position
+    // return to original position
     window.setTimeout(function () {
-            // if input empty
+      // if input empty
       if (!newsletterInput.value) {
         deFixFooterNewsletterFormPosition(el);
       }
@@ -55,14 +56,15 @@
       }
     });
   }
+  */
 
   function initFooterNewsletterForm() {
     var el = document.getElementById('block-mailchimpsubscriptionformgiromoneytimes');
-        // remove text messing with layout
+    // remove text messing with layout
     var newsletterForm = {};
     var newsletterInput = giro.querySelector('.form-email');
 
-        // customize mailchimp form
+    // customize mailchimp form
     if (el) {
       // addCloseIcon(el, newsletterInput);
 
@@ -77,8 +79,8 @@
       // if (window.location.pathname === '/') {
       //   showFixedNewsletterForm(el, newsletterInput);
       // } else {
-        el.classList.add('show');
-        deFixFooterNewsletterFormPosition(el);
+      el.classList.add('show');
+      deFixFooterNewsletterFormPosition(el);
       // }
     }
   }

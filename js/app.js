@@ -1,89 +1,94 @@
-(function() {
+/* globals FB: false */
 
-    var a2aFbClass = 'a2a_button_facebook';
-    var a2aFbSelector = '.' + a2aFbClass;
-    var a2aFbLikeShareClass = 'a2a_button_facebook_like';
+(function () {
+  'use strict';
 
-    function parseFB(context) {
-        var elements = context.querySelectorAll(a2aFbSelector);
-        var item = null;
+  var a2aFbClass = 'a2a_button_facebook';
+  var a2aFbSelector = '.' + a2aFbClass;
+  var a2aFbLikeShareClass = 'a2a_button_facebook_like';
 
-        for (var i = 0; i < elements.length; i++) {
-            item = elements[i];
-            FB.XFBML.parse(item);
-        }
+  // function parseFB(context) {
+  //   var elements = context.querySelectorAll(a2aFbSelector);
+  //   var item = null;
+  //
+  //   for (var i = 0; i < elements.length; i++) {
+  //     item = elements[i];
+  //     FB.XFBML.parse(item);
+  //   }
+  // }
+
+  function changeAddToAnyFbShareButton() {
+    var elements = document.querySelectorAll(a2aFbSelector);
+
+    var item = null;
+
+    for (var i = 0; i < elements.length; i++) {
+      item = elements[i];
+      item.classList.remove(a2aFbClass);
+      item.classList.add(a2aFbLikeShareClass);
+
+      item.dataset.layout = "button";
+      item.dataset.action = "like";
+      item.dataset.size = "small";
+      // item.dataset.showFaces = "false";
+      item.dataset.share = "true";
+      item.dataset.width = "143";
     }
+  }
 
-    function changeAddToAnyFbShareButton() {
-        var elements = document.querySelectorAll(a2aFbSelector);
+  function changeFbShareButtonOnLoadMore(context) {
+    var elements = context.querySelectorAll(a2aFbSelector);
+    //
+    var item = null;
+    var article = null;
+    var href = null;
 
-        var item = null;
+    for (var i = 0; i < elements.length; i++) {
+      item = elements[i];
+      item.classList.remove(a2aFbClass);
+      item.classList.add('a2a_button_facebook_loaded');
+      article = item.parentNode.parentNode.parentNode;
+      href = article.querySelector('.node__title-link').href;
 
-        for (var i = 0; i < elements.length; i++) {
-            item = elements[i];
-            item.classList.remove(a2aFbClass);
-            item.classList.add(a2aFbLikeShareClass);
+      item.innerHTML = '<div class="fb-like" data-href="' + href + '" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"  data-width="126"></div>';
 
-            item.dataset.layout = "button";
-            item.dataset.action = "like";
-            item.dataset.size = "small";
-            // item.dataset.showFaces = "false";
-            item.dataset.share = "true";
-            item.dataset.width = "143";
-        }
+      FB.XFBML.parse(item);
     }
+  }
 
-    function changeFbShareButtonOnLoadMore(context) {
-        var elements = context.querySelectorAll(a2aFbSelector);
-        //
-        var item = null;
-        var article = null;
-        var href = null;
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-        for (var i = 0; i < elements.length; i++) {
-            item = elements[i];
-            item.classList.remove(a2aFbClass);
-            item.classList.add('a2a_button_facebook_loaded');
-            article = item.parentNode.parentNode.parentNode;
-            href = article.querySelector('.node__title-link').href;
+  if (w > 700) { // tablet or desktop
+    changeAddToAnyFbShareButton();
 
-            item.innerHTML = '<div class="fb-like" data-href="' + href + '" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"  data-width="126"></div>';
-
-            FB.XFBML.parse(item);
-        }
-    }
-
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-    if (w > 700) { // tablet or desktop
-        changeAddToAnyFbShareButton();
-
-        Drupal.behaviors.FBbuttons = {
-            attach: function (context, settings) {
-                changeFbShareButtonOnLoadMore(context);
-            }
-        };
-    }
+    Drupal.behaviors.FBbuttons = {
+      attach: function (context) {
+        changeFbShareButtonOnLoadMore(context);
+      }
+    };
+  }
 
 
-    function insertLinkBetweenNews() {
-        var $linkUltimas = jQuery('<h2 class="view-frontpage-link_title"><a class="view-frontpage-link_link" href="/ultimas-noticias">Últimas Notícias</a></h2>');
-        $linkUltimas.insertAfter('.view-frontpage .views-row:nth-child(3)');
-    }
-    insertLinkBetweenNews();
+  function insertLinkBetweenNews() {
+    var $linkUltimas = jQuery('<h2 class="view-frontpage-link_title"><a class="view-frontpage-link_link" href="/ultimas-noticias">Últimas Notícias</a></h2>');
+    $linkUltimas.insertAfter('.view-frontpage .views-row:nth-child(3)');
+  }
 
-    function insertPatrocinadoBetweenNews() {
-        var $patrocinado = jQuery('.view-patrocinado-home .views-row');
+  insertLinkBetweenNews();
 
-        var position = 6;
-        var selector = '.view-frontpage .views-row:nth-child(6)';
+  function insertPatrocinadoBetweenNews() {
+    var $patrocinado = jQuery('.view-patrocinado-home .views-row');
 
-        $patrocinado.each(function (index, patrocinado) {
-          jQuery(patrocinado).insertAfter(selector);
-          position = position + 3;
-          selector = '.view-frontpage .views-row:nth-child(' + position + ')';
-        });
-    }
-    insertPatrocinadoBetweenNews();
+    var position = 6;
+    var selector = '.view-frontpage .views-row:nth-child(6)';
+
+    $patrocinado.each(function (index, patrocinado) {
+      jQuery(patrocinado).insertAfter(selector);
+      position = position + 3;
+      selector = '.view-frontpage .views-row:nth-child(' + position + ')';
+    });
+  }
+
+  insertPatrocinadoBetweenNews();
 
 })();

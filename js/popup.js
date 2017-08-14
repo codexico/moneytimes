@@ -1,4 +1,5 @@
-(function() {
+(function () {
+  'use strict';
 
   function waitToHidePopup(popup) {
     setTimeout(function () {
@@ -20,14 +21,14 @@
   }
 
   function setPopupToken() {
-    var token = {timestamp: new Date().getTime()}
+    var token = {timestamp: new Date().getTime()};
     sessionStorage.setItem('popup', JSON.stringify(token));
   }
 
   function onCloseListener(popup) {
     var closeButton = popup.querySelector('.popup_close');
 
-    closeButton.addEventListener('click', function (e) {
+    closeButton.addEventListener('click', function () {
       popup.classList.add('popup_hidden');
       return false;
     });
@@ -38,7 +39,7 @@
 
     if (isPopupExpired(token)) {
       showPopup(popup);
-      onCloseListener(popup)
+      onCloseListener(popup);
       waitToHidePopup(popup);
       setPopupToken();
     }
